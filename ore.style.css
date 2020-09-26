@@ -1,0 +1,58 @@
+body {
+  background: linear-gradient(to bottom, #4F8899, #417180 20%, #11222D);
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.layout {
+  align-content: center;
+}
+
+.layout .page-content {
+  z-index: 20;
+  margin: auto;
+  color: #e3e3e3;
+}
+
+.layout .page-content h1 {
+  clear: both;
+  color: #458DAB;
+  text-shadow: 1px 3px 5px #11222D;
+}
+
+.layout .page-content .page-content-subContent p {
+  width: 60%;
+}
+
+@media (max-width: 576px) {
+  .layout .page-content .page-content-subContent p {
+    width: 100%;
+  }
+}
+
+.layout .page-image {
+  z-index: 10;
+  float: right;
+}
+
+.layout .page-image img {
+  position: relative;
+  float: right;
+  height: 360px;
+  max-height: 100%;
+  margin-bottom: -2.5rem;
+}
+
+/* .page-image img {
+  position: absolute;
+} */

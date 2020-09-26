@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="landing.style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Gem | Rocket-Project</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="contentWrapper">
+      <div class="fixedPageContent">
+        <div class="page-content-gridContainer" id="landing">
+          <header>
+            <div class="container h-100">
+              <div class="d-flex h-100 text-center align-items-center" style="transform: translateY(-5%);">
+                <div class="w-100 text-white" style="text-shadow: 0px 3px 9px #333;">
+                  <div id="heading" class="container" style="opacity: 0;transform: translateY(40%);">
+                    <h1 class="display-3">Mohs Scale Of Mineral Hardness</h1>
+                    <p class="lead mb-0">มาตราความแข็งแร่ของโมส</p>
+                  </div>
+                  <h1 id="arrow" class="display-4 mt-5" style="opacity: 0;transform: translateY(-100%);">
+                    <span style="cursor: pointer;" onclick="toContent()">▼</span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="page-content-gridContainer" id="main-content">
+          <div class="page-content-contentWrapper">
+            <h1>Calcite</h1>
+            <div class="page-content-subContent">
+              <p>
+                เป็นแร่คาร์บอเนตและเป็นแร่ที่เสถียรที่สุดในกลุ่มแร่ที่มีสูตรโครงสร้างเป็นแคลเซียมคาร์บอเนต (CaCO3)
+                ส่วนแร่อื่นที่มีสูตรโครงสร้างเดียวกัน ได้แก่ อราโกไนท์ (Aragonite) และ วาเทอร์ไรต์ (Vaterite)
+                โดยอราโกไนท์จะเปลี่ยนไปเป็นแคลไซต์ที่อุณหภูมิ 470 องศาเซลเซียส ส่วนวาเทอร์ไรต์นั้นไม่เสถียร
+              </p>
+              <div class="page-content-button">
+                <button type="button" class="btn btn-outline-secondary">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="page-content-imageWrapper">
+            <img src="assets/5f5c8cb8d9019.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="lib/scroll-out.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
