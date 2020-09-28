@@ -216,32 +216,31 @@ nav li{
 }
 
 nav a{ 
-  display: block; 
+  display: block;
+  position: relative;
+  top: 0;
   width: 200px; 
   height: 50px; 
   left: -5px;
   /*text-indent: -9999px;*/ /*no text*/
   text-align: left;
-  text-decoration: none;
-  background-color: transparent; 
-  transition: all 0.3s ease; 
-  position: relative;
-  top: 0;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
-  color: #4c63af;
+  color: #000;
+  text-decoration: none;
 }
 nav a h8{
   color: transparent;
   text-decoration: none;
 }
-nav a h8:hover{ 
+nav a:hover,nav a h8:hover{ 
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-nav a h8.active, nav a.active{ 
-  color: #000;
+nav a.active{ 
+  color: #ff0000;
+
   text-decoration: none;
 }
 
