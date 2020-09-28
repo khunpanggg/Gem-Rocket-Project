@@ -86,7 +86,11 @@ body{
   transition-delay: 0.25s;
 }
 
+.gem{
+  min-width: 22vw;
+  max-width: 25vw;
 
+}
 
 .btn span:nth-child(4) {
   bottom: -100%;
