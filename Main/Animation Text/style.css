@@ -121,7 +121,7 @@ body{
   width: 100%;
   height: 100px;
   background: linear-gradient(to top, #4c9cb0, transparent);
-  z-index: 10000;
+  z-index: 50;
 }
 .parallax:after {
   content: '';
@@ -178,7 +178,7 @@ body{
   letter-spacing: 8px;
   position: relative;
   animation: text 4s 1;
-  z-index: 1;
+  z-index: 8;
 }
 
 @keyframes text {
@@ -204,12 +204,11 @@ nav{
   transform: translateY(-50%);
   left: 0; 
   width: 6vw; 
-  z-index: 2;
+  z-index: 0;
 
 }
 
 nav li{ 
- 
   margin: 25px 25px;
   list-style: none;
 }
@@ -242,11 +241,26 @@ nav a.active{
   text-decoration: none;
 }
 
-.red { background-color: #B23751; }
-.blue { background-color: #346CA5; }
-.green { background-color: #65B237; }
-.pink { background-color: #c0392b; }
-.black { background-color: #2c3e50; }
+.red {
+  background-color: #B23751;
+  z-index: 1;
+}
+.blue { 
+  background-color: #346CA5;
+  z-index: 2;
+}
+.green { 
+  background-color: #65B237;
+  z-index: 3;
+}
+.pink { 
+  background-color: #c0392b;
+  z-index: 4;
+}
+.black { 
+  background-color: #2c3e50; 
+  z-index: 5;
+}
 
 section{
   display: block;
