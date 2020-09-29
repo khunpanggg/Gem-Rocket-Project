@@ -1,3 +1,26 @@
+
+// Scroll half-way to make it easier to see the effect
+document.scrollingElement.scrollBy(0, 500);
+
+function addNew() {
+  let newNode = document.createElement("section");
+  newNode.classList.add("new");
+  newNode.innerText="New (not a snap area)";
+
+  const children = document.body.children;
+  let rand = Math.floor(Math.random() * (children.length - 1));
+  document.body.insertBefore(newNode, children[rand]);
+}
+
+function addNewAndSnap() {
+  addNew();
+  // A small amount of programmatic scrolling forces snapping
+  // in Chrome and Firefox.
+  document.scrollingElement.scrollBy(0, 1);
+  document.scrollingElement.scrollBy(0, -1);
+
+}
+
 $('a[href^="#"]').click(function (event) {
     var id = $(this).attr("href");
     var target = $(id).offset().top;

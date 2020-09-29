@@ -4,6 +4,24 @@
 
   font-family: sans-serif;
 }
+html {
+  padding: 0;
+  margin: 0;
+  /* Enable Safari touch scrolling physics which is needed for scroll snap */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: y proximity;
+  /* suppress scroll anchoring to see the effect */
+  overflow-anchor: none;
+  scroll-behavior: smooth;
+
+}
+section{
+  /* snap align start */
+  scroll-snap-align: center;
+  display: block;
+  position: relative;
+  height: 100vh;
+}
 
 body {
   background: #4c9cb0;
@@ -348,11 +366,7 @@ nav li a b {
   z-index: 5;
 }
 
-section {
-  display: block;
-  position: relative;
-  height: 100vh;
-}
+
 
 .content-wrap {
   position: relative;
