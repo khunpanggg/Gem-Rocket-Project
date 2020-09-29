@@ -1,5 +1,5 @@
 // Scroll half-way to make it easier to see the effect
-document.scrollingElement.scrollBy(0, 500);
+//document.scrollingElement.scrollBy(0, 30);
 
 function addNew() {
   let newNode = document.createElement("section");
