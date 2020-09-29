@@ -316,8 +316,8 @@ nav li a b {
   transform: rotate(-45deg);
 }
 
-.red {
-  background-color: #B23751;
+.talc {
+  background-color: #90656d;
   z-index: 1;
 }
 
@@ -570,3 +570,5 @@ nav li a b {
     transform: scale3d(0.5, 0.5, 1);
   }
 }
+
+

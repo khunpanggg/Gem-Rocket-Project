@@ -1,4 +1,3 @@
-
 // Scroll half-way to make it easier to see the effect
 document.scrollingElement.scrollBy(0, 500);
 
