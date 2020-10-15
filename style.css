@@ -432,7 +432,8 @@ nav li a b {
   grid-area: author;
   margin: 0;
   -webkit-writing-mode: vertical-lr;
-  writing-mode: vertical-lr;
+  writing-mode: vertical-lr; /*เพิ่มตรงนี้ เพื่อให้ข้อความด้านข้างเป็นแนวตั้งลงมา*/
+  text-orientation: upright;
   padding: 1em;
   text-align: right;
   z-index: 10;
