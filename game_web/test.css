@@ -21,9 +21,9 @@
     font-family: 'Chakra Petch', sans-serif;
 }
 #question {
-    font-size: xx-large;
+    font-size: 50px;
     text-align: center;
-    margin: 20px;
+    margin: 0px 20px 20px 20px;
     font-family: 'Chakra Petch', sans-serif;
 }
 button {
@@ -33,7 +33,7 @@ button {
     background: white;
     border: indigo solid 5px;
     font-family: 'Chakra Petch', sans-serif;
-    font-size: x-large;
+    font-size: 40px;
     cursor: pointer;
     border-radius: 12px;
 }
