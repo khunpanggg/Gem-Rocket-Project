@@ -1,0 +1,26 @@
+.flex { display:flex;}
+
+.field {
+  min-width: 200px;
+  min-height: 30px;
+  margin: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: cornflowerblue;
+}
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 50vw;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+#question {
+    font-size: xx-large;
+    text-align: center;
+    margin: 20px;
+}
