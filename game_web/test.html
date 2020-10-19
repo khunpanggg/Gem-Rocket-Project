@@ -14,7 +14,8 @@
     </div>
     <center>
         <div id="question">บอกหน่อยสิ ว่าแร่นี้มีค่าความแข็งเท่าไร</div>
-        <img src=".\image\diamond2.jpg" alt="diamond">
+        <!-- <img src="./image/diamond2.jpg" alt="diamond"> -->
+        <div id="x"></div>
         <div class="flex">
             <div class="field">1</div>
         </div>
@@ -27,8 +28,23 @@
     </center>
 
     <script>
-        var quiz = [];
-        quiz[0] = new Question("แร่ชนิดนี้อยู่ในระดับความแข็งเท่าไร");
+        var answer = [];
+        answer[0] = new Question("1");
+        answer[1] = new Question("2");
+        answer[2] = new Question("3");
+        answer[3] = new Question("4");
+        answer[4] = new Question("5");
+        answer[5] = new Question("6");
+        answer[6] = new Question("7");
+        answer[7] = new Question("8");
+        answer[8] = new Question("9");
+        answer[9] = new Question("10");
+
+        var img = document.createElement("img");
+        img.src = "./image/diamond2.jpg";
+        var src = document.getElementById("x");
+
+        src.appendChild(img);
     </script>
 </body>
 
