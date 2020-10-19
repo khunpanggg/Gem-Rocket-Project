@@ -373,6 +373,15 @@ nav li a b {
   z-index: 5;
 }
 
+/* สัญลักษณ์พวกมีด มือ */
+.symbol{
+  padding-bottom: 10px;
+  padding-right: 5px;
+  margin-right: 5px;
+  opacity: 1;
+  width: 55px;
+  height: 55px;
+}
 
 
 .content-wrap {
