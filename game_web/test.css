@@ -9,18 +9,39 @@
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    background-color: cornflowerblue;
+    font-family: 'Chakra Petch', sans-serif
 }
+
 .flex-container > div {
-    background-color: #f1f1f1;
     width: 50vw;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+    font-family: 'Chakra Petch', sans-serif
 }
 #question {
     font-size: xx-large;
     text-align: center;
     margin: 20px;
+    font-family: 'Chakra Petch', sans-serif
+}
+button {
+    height: 70px;
+    width: 400px;
+    outline: none;
+    background: white;
+    border: black solid 2px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: x-large;
+}
+  
+button:active {
+    background-color: indigo;
+    color: lavender;
+ }
+
+img {
+    width: 30vw;
+    height: 30vw;
 }
