@@ -10,6 +10,7 @@ html {
   /* Enable Safari touch scrolling physics which is needed for scroll snap */
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: y proximity;
+  
   /* suppress scroll anchoring to see the effect */
   overflow-anchor: none;
   scroll-behavior: smooth;
@@ -432,7 +433,8 @@ nav li a b {
   grid-area: author;
   margin: 0;
   -webkit-writing-mode: vertical-lr;
-  writing-mode: vertical-lr;
+  writing-mode: vertical-lr; /*เพิ่มตรงนี้ เพื่อให้ข้อความด้านข้างเป็นแนวตั้งลงมา*/
+  text-orientation: upright;
   padding: 1em;
   text-align: right;
   z-index: 10;
@@ -515,6 +517,7 @@ nav li a b {
   justify-self: end;
   align-self: start;
 }
+
 
 
 
