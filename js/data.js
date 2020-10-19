@@ -1,5 +1,14 @@
 gemData([
     {
+      "id": 0,
+      "name": "---",
+      "formula": "---",
+      "type": "----",
+      "color": "----",
+      "property": "----",
+      "benefit": "----"
+    },
+    {
       "id": 1,
       "name": "Talc ทัลก์",
       "formula": "Mg3Si4O10(OH)2",
