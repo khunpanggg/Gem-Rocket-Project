@@ -10,7 +10,7 @@ gemData([
   },
   {
     "id": 1,
-    "name": "Talc ทัลก์",
+    "name": "Talc (ทัลก์)",
     "formula": "Mg3Si4O10(OH)2",
     "type": "แร่ไฮเดรตแมกนิเซียมซิลิเกต",
     "color": "ขาว เทา หรือฟ้า",
@@ -19,7 +19,7 @@ gemData([
   },
   {
     "id": 2,
-    "name": "Gypsum ยิปซัม หรือเรียกว่าเกลือจืด",
+    "name": "Gypsum (ยิปซัม หรือเรียกว่าเกลือจืด)",
     "formula": "CaSO4·2H2O",
     "type": "แร่อโลหะ",
     "color": "ขาว เทา หรือชมพูแดง",
@@ -28,7 +28,7 @@ gemData([
   },
   {
     "id": 3,
-    "name": "Calcium แคลเซียม",
+    "name": "Calcium (แคลเซียม)",
     "formula": "Ca",
     "type": "โลหะทรานซิชัน",
     "color": "ขาวเงิน สีเทาอ่อน",
@@ -37,7 +37,7 @@ gemData([
   },
   {
     "id": 4,
-    "name": "Selenium ซีลีเนียม",
+    "name": "Selenium (ซีลีเนียม)",
     "formula": "Se",
     "type": "อโลหะ",
     "color": "ขาวเงิน สีเทาอ่อน",
@@ -46,7 +46,7 @@ gemData([
   },
   {
     "id": 5,
-    "name": "Cadmium แคดเมียม",
+    "name": "Cadmium (แคดเมียม)",
     "formula": "Cd",
     "type": "โลหะทรานซิชัน",
     "color": "ขาว ฟ้า",
@@ -55,7 +55,7 @@ gemData([
   },
   {
     "id": 6,
-    "name": "Sulfur กำมะถัน",
+    "name": "Sulfur (กำมะถัน)",
     "formula": "S",
     "type": "อโลหะ",
     "color": "ขาวเงิน สีเทาอ่อน",
@@ -64,7 +64,7 @@ gemData([
   },
   {
     "id": 7,
-    "name": "Tellurium เทลลูเรียม",
+    "name": "Tellurium (เทลลูเรียม)",
     "formula": "Te",
     "type": "กึ่งโลหะ",
     "color": "ขาวเงิน",
@@ -73,7 +73,7 @@ gemData([
   },
   {
     "id": 8,
-    "name": "Bismuth บิสมัท",
+    "name": "Bismuth (บิสมัท)",
     "formula": "Bi",
     "type": "โลหะหนัก",
     "color": "สีขาวอมชมพู",
@@ -82,7 +82,7 @@ gemData([
   },
   {
     "id": 9,
-    "name": "Calcite แคลไซต์",
+    "name": "Calcite (แคลไซต์)",
     "formula": "CaCO3",
     "type": "แร่คาร์บอเนต",
     "color": "ไร้สี ขาว เทา เหลือง เขียว",
@@ -91,7 +91,7 @@ gemData([
   },
   {
     "id": 10,
-    "name": "Copper ทองแดง",
+    "name": "Copper (ทองแดง)",
     "formula": "Cu",
     "type": "โลหะอัลคาไลเอิร์ธ",
     "color": "สีแดงแบบทองแดง",
@@ -100,7 +100,7 @@ gemData([
   },
   {
     "id": 11,
-    "name": "Arsenic สารหนู",
+    "name": "Arsenic (สารหนู)",
     "formula": "As",
     "type": "กึ่งโลหะ",
     "color": "เทามันวาว",
@@ -109,7 +109,7 @@ gemData([
   },
   {
     "id": 12,
-    "name": "Antimony พลวง",
+    "name": "Antimony (พลวง)",
     "formula": "Sb",
     "type": "กึ่งโลหะ",
     "color": "เหลือง ดำ",
@@ -118,7 +118,7 @@ gemData([
   },
   {
     "id": 13,
-    "name": "Thorium ทอเรียม",
+    "name": "Thorium (ทอเรียม)",
     "formula": "Th",
     "type": "โลหะ",
     "color": "เงินวาว",
@@ -127,7 +127,7 @@ gemData([
   },
   {
     "id": 14,
-    "name": "Fluoride ฟลูออไรด์",
+    "name": "Fluoride (ฟลูออไรด์)",
     "formula": "CaF2",
     "type": "สารประกอบอนินทรีย์",
     "color": "ขาว",
@@ -136,7 +136,7 @@ gemData([
   },
   {
     "id": 15,
-    "name": "Iron เหล็ก",
+    "name": "Iron (เหล็ก)",
     "formula": "Fe",
     "type": "ธาตุโลหะทรานซิชัน",
     "color": "เงิน ขาวหรือเทา เป็นเงา",
@@ -145,7 +145,7 @@ gemData([
   },
   {
     "id": 16,
-    "name": "Nickel นิกเกิล",
+    "name": "Nickel (นิกเกิล)",
     "formula": "Ni",
     "type": "โลหะ",
     "color": "สีขาวเงินมันวาว",
@@ -154,7 +154,7 @@ gemData([
   },
   {
     "id": 17,
-    "name": "Apatite อะพาไทต์",
+    "name": "Apatite (อะพาไทต์)",
     "formula": "Ca5(PO4)3(F,Cl,OH)",
     "type": "แร่ฟอสเฟต",
     "color": "เขียว เหลือง น้ำเงิน ม่วง ชมพู และน้ำตาล",
@@ -163,7 +163,7 @@ gemData([
   },
   {
     "id": 18,
-    "name": "Cobalt โคบอลต์",
+    "name": "Cobalt (โคบอลต์)",
     "formula": "Co",
     "type": "โลหะทรานซิชัน",
     "color": "เทาเป็นเงา",
@@ -172,7 +172,7 @@ gemData([
   },
   {
     "id": 19,
-    "name": "Zirconium เซอร์โคเนียม",
+    "name": "Zirconium (เซอร์โคเนียม)",
     "formula": "Zr",
     "type": "โลหะทรานซิชัน",
     "color": "ขาวเทาเป็นเงา",
@@ -181,7 +181,7 @@ gemData([
   },
   {
     "id": 20,
-    "name": "Palladium แพลเลเดียม",
+    "name": "Palladium (แพลเลเดียม)",
     "formula": "Pd",
     "type": "โลหะทรานซิชัน",
     "color": "สีขาวเงิน",
@@ -199,7 +199,7 @@ gemData([
   },
   {
     "id": 22,
-    "name": "Titanium ไทเทเนียม",
+    "name": "Titanium (ไทเทเนียม)",
     "formula": "TiO2",
     "type": "โลหะ",
     "color": "สีเงิน",
@@ -208,7 +208,7 @@ gemData([
   },
   {
     "id": 23,
-    "name": "Germanium เจอร์เมเนียม",
+    "name": "Germanium (เจอร์เมเนียม)",
     "formula": "Ge",
     "type": "กึ่งโลหะ",
     "color": "สีขาวอมเทา",
@@ -217,7 +217,7 @@ gemData([
   },
   {
     "id": 24,
-    "name": "Niobium ไนโอเบียม",
+    "name": "Niobium (ไนโอเบียม)",
     "formula": "Nb",
     "type": "	โลหะทรานซิชัน",
     "color": "สีเทามันวาว",
@@ -226,7 +226,7 @@ gemData([
   },
   {
     "id": 25,
-    "name": "Rhodium โรเดียม",
+    "name": "Rhodium (โรเดียม)",
     "formula": "Rh",
     "type": "โลหะ",
     "color": "สีขาวเงิน",
@@ -244,7 +244,7 @@ gemData([
   },
   {
     "id": 27,
-    "name": "Osmium ออสเมียม",
+    "name": "Osmium (ออสเมียม)",
     "formula": "Os",
     "type": "โลหะ",
     "color": "สีเงินออกฟ้า",
@@ -253,7 +253,7 @@ gemData([
   },
   {
     "id": 28,
-    "name": "Rhenium รีเนียม",
+    "name": "Rhenium (รีเนียม)",
     "formula": "Re",
     "type": "โลหะทรานซิชัน",
     "color": "สีขาวเงิน",
@@ -262,7 +262,7 @@ gemData([
   },
   {
     "id": 29,
-    "name": "Vanadium วาเนเดียม",
+    "name": "Vanadium (วาเนเดียม)",
     "formula": "V",
     "type": "โลหะทรานซิชัน",
     "color": "สีเทาเงินเป็นมันวาว",
@@ -280,7 +280,7 @@ gemData([
   },
   {
     "id": 31,
-    "name": "Cubic Zirconia คิวบิกเซอร์โคเนีย",
+    "name": "Cubic Zirconia (คิวบิกเซอร์โคเนีย)",
     "formula": "ZrO2",
     "type": "วัสดุสังเคราะห์",
     "color": "เซอร์คอเนียจะเรืองแสงมีเหลือง,เหลืองอมเขียวหรือ สีน้ำตาลอ่อน",
@@ -298,7 +298,7 @@ gemData([
   },
   {
     "id": 33,
-    "name": "Tungsten carbide ทังสเตนคาร์ไบด์",
+    "name": "Tungsten carbide (ทังสเตนคาร์ไบด์)",
     "formula": "WC",
     "type": "โลหะ",
     "color": "สีเทาดำมันวาว",
@@ -307,7 +307,7 @@ gemData([
   },
   {
     "id": 34,
-    "name": "Titanium Carbide ไทเทเนียมคาร์ไบด์",
+    "name": "Titanium Carbide (ไทเทเนียมคาร์ไบด์)",
     "formula": "TiC",
     "type": "โลหะ",
     "color": "สีเทา",
