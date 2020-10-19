@@ -10,7 +10,7 @@
 
 <body>
     <div class="flex-container">
-        <div>Time: 0</div>
+        <div>Time left: <span id="tim">30</span></div>
         <div>Score: 0</div>
     </div>
     <center>
@@ -24,25 +24,33 @@
         </div>
     </center>
 
-    <script>
-        var answer = [];
-        answer[0] = new ans("1");
-        answer[1] = new ans("2");
-        answer[2] = new ans("3");
-        answer[3] = new ans("4");
-        answer[4] = new ans("5");
-        answer[5] = new ans("6");
-        answer[6] = new ans("7");
-        answer[7] = new ans("8");
-        answer[8] = new ans("9");
-        answer[9] = new ans("10");
+    <script type="text/javascript">
+        // var answer = [];
+        // answer[0] = new ans("1");
+        // answer[1] = new ans("2");
+        // answer[2] = new ans("3");
+        // answer[3] = new ans("4");
+        // answer[4] = new ans("5");
+        // answer[5] = new ans("6");
+        // answer[6] = new ans("7");
+        // answer[7] = new ans("8");
+        // answer[8] = new ans("9");
+        // answer[9] = new ans("10");
+
+        var timeleft = 30;
+        var downloadTimer = setInterval(function () {
+            timeleft--;
+            document.getElementById("tim").textContent = timeleft;
+            if (timeleft <= 0)
+                clearInterval(downloadTimer);
+        }, 1000);
 
         // อันนี้งง
-        var img = document.createElement("img");
-        img.src = "./image/diamond2.jpg";
-        var src = document.getElementById("x");
+        // var img = document.createElement("img");
+        // img.src = "./image/diamond2.jpg";
+        // var src = document.getElementById("x");
 
-        src.appendChild(img);
+        // src.appendChild(img);
     </script>
 </body>
 
