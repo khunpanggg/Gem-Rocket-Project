@@ -10,7 +10,8 @@
 
 <body>
     <div class="flex-container">
-        <div>Time left: <span id="tim">30</span></div>
+        <!-- <div>Time left: <span id="tim">5</span></div> -->
+        <div>Life remain: <span id="heart">3</span></div>
         <div>Score: <span id="sco">0</span></div>
     </div>
     <center>
@@ -65,9 +66,16 @@
         quiz[1] = new Question("./image/gypsum.png", "2", "6", "3");
         quiz[2] = new Question("./image/calsite.png", "3", "1", "2");
 
+        var heart = 3;
+        document.getElementById("heart").textContent = heart;
+        if (heart <= 0) {
+            alert("dfdf");
+        }
+
         var randomQuestion;
         var answers = [];
         var currentScore = 0;
+        var play = true;
 
         document.addEventListener("DOMContentLoaded", function (event) {
             btnProvideQuestion();
@@ -104,52 +112,65 @@
 
         function answerA_clicked() {
             var answerA = document.getElementById("answerA").value;
-            checkAnswer(answerA);
+            checkAnswer(answerA, heart);
         }
 
         function answerB_clicked() {
             var answerB = document.getElementById("answerB").value;
-            checkAnswer(answerB);
+            checkAnswer(answerB, heart);
         }
         function answerC_clicked() {
             var answerC = document.getElementById("answerC").value;
 
-            checkAnswer(answerC);
+            checkAnswer(answerC, heart);
         }
 
-        function adjustScore(isCorrect) {
+        function adjustScore(isCorrect, heart) {
             debugger;
             if (isCorrect) {
                 currentScore++;
             } else {
                 if (currentScore > 0) {
                     currentScore--;
+                    this.heart--;
                 }
             }
             document.getElementById("sco").innerHTML = currentScore;
         }
 
-        function checkAnswer(answer) {
+        function checkAnswer(answer, heart) {
             if (answer == randomQuestion.rightAnswer) {
-                adjustScore(true);
+                adjustScore(true, this.heart);
                 btnProvideQuestion();
             } else {
                 btnProvideQuestion();
-                adjustScore(false);
+                adjustScore(false, this.heart);
             }
         }
 
         //time
-        var timeleft = 30;
-        var downloadTimer = setInterval(function () {
-            timeleft--;
-            document.getElementById("tim").textContent = timeleft;
-            if (timeleft <= 0)
-                clearInterval(downloadTimer);
+        // var timeleft = 5;
+        // var downloadTimer = setInterval(function () {
+        //     timeleft--;
+        //     document.getElementById("tim").textContent = timeleft;
+        //     if (timeleft <= 0)
+        //         clearInterval(downloadTimer);
+        // }, 1000);
 
-        }, 1000);
+        // if (timeleft <= 0) {
+        //     alert("dfdf");
+        // }
+        //game over
+        // function isGameover(play) {
+        //     if (timeleft <= 0) {
 
+        //         // this.play = false;
+        //     }
+        // }
 
+        // if (play == false) {
+        //     alert("dfdfdfdfdf");
+        // }
 
     </script>
 </body>
