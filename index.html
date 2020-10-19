@@ -1157,7 +1157,7 @@
   </article>
   <!-- Modal -->
   <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="title"></h5>
@@ -1184,10 +1184,10 @@
             '<b>สี : </b>' + arr[i].color +'<br>'+
             '<b>คุณสมบัติ :</b>' +
             '<ul>'+ arr[i].property +'</ul>'+
-            '<b>ประโยชน์ : </b>'+
+            '<b>ประโยชน์ :</b>'+
             '<ul>'+ arr[i].benefit +'</ul>' +
             '</p>';
-          title +=  arr[i].name;
+          title += '<b>'+ arr[i].name + '</b>';
           document.getElementById("title").innerHTML = title;
           document.getElementById("detail").innerHTML = out;
         });
