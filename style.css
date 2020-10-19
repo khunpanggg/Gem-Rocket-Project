@@ -317,6 +317,12 @@ nav li a b {
   transform: rotate(-45deg);
 }
 
+.intro{
+  background-color: #90656d;
+  z-index: 1;
+
+}
+
 .talc {
   background-color: #90656d;
   z-index: 1;
