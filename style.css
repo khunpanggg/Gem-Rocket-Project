@@ -2,21 +2,23 @@
   margin: 0;
   padding: 0;
 
-  font-family: sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
 }
+
 html {
   padding: 0;
   margin: 0;
   /* Enable Safari touch scrolling physics which is needed for scroll snap */
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: y proximity;
-  
+
   /* suppress scroll anchoring to see the effect */
   overflow-anchor: none;
   scroll-behavior: smooth;
 
 }
-section{
+
+section {
   /* snap align start */
   scroll-snap-align: center;
   display: block;
@@ -27,6 +29,7 @@ section{
 body {
   background: #4c9cb0;
   min-height: 1000px;
+  overflow-x: hidden;
 }
 
 .row {
@@ -145,7 +148,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 100px;
-  background: linear-gradient(to top, #90656d, transparent);
+  background: linear-gradient(to top, #abc1b9, transparent);
   z-index: 10000;
 }
 
@@ -317,19 +320,19 @@ nav li a b {
   transform: rotate(-45deg);
 }
 
-.intro{
+.intro {
   background-color: #90656d;
   z-index: 1;
 
 }
 
 .talc {
-  background-color: #90656d;
+  background-color: #abc1b9;
   z-index: 1;
 }
 
 .gypsum {
-  background-color: #19364d;
+  background-image: url("./img/background/bg2-1.png");
   z-index: 2;
 }
 
@@ -339,12 +342,12 @@ nav li a b {
 }
 
 .fluorite {
-  background-color: #a3814f;
+  background-color: #a08496;
   z-index: 4;
 }
 
 .apatite {
-  background-color: #2c3e50;
+  background-color: #d2e6f7;
   z-index: 5;
 }
 
@@ -354,27 +357,27 @@ nav li a b {
 }
 
 .quartz {
-  background-color: rgb(51, 84, 90);
+  background-color: rgb(69, 102, 107);
   z-index: 5;
 }
 
 .topaz {
-  background-color: #16445f;
+  background-color: #396680;
   z-index: 5;
 }
 
 .corundum {
-  background-color: #3d222f;
+  background-color: #b591a2;
   z-index: 5;
 }
 
 .diamond {
-  background-color: #6d2b2b;
+  background-color: #b57f7f;
   z-index: 5;
 }
 
 /* สัญลักษณ์พวกมีด มือ */
-.symbol{
+.symbol {
   padding-bottom: 10px;
   padding-right: 5px;
   margin-right: 5px;
@@ -396,12 +399,31 @@ nav li a b {
   pointer-events: none;
 }
 
+.content-bg-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.content-bg-overlay img {
+  width: 100%;
+  height: 100%;
+}
+
 .content {
   position: relative;
   display: grid;
 }
 
-
+.title-fantasy {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  text-shadow: 5px 3px gold;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
 
 .content--layout {
   pointer-events: auto;
@@ -412,6 +434,17 @@ nav li a b {
   grid-template-areas: "... title title title"
     "author ... desc desc"
     "author ... link link";
+}
+
+.content--layout--topic {
+  pointer-events: auto;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 50px 300px 300px 200px;
+  grid-template-rows: 150px 150px 150px;
+  grid-template-areas: "... title title title"
+    "author ... desc desc"
+    "author ... desc desc";
 }
 
 .content--related {
@@ -434,7 +467,7 @@ nav li a b {
 
 .content__title {
   grid-area: title;
-  font-family: 'nexa_boldregular', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   letter-spacing: -0.025em;
   font-size: 8em;
   line-height: 160px;
@@ -448,7 +481,8 @@ nav li a b {
   grid-area: author;
   margin: 0;
   -webkit-writing-mode: vertical-lr;
-  writing-mode: vertical-lr; /*เพิ่มตรงนี้ เพื่อให้ข้อความด้านข้างเป็นแนวตั้งลงมา*/
+  writing-mode: vertical-lr;
+  /*เพิ่มตรงนี้ เพื่อให้ข้อความด้านข้างเป็นแนวตั้งลงมา*/
   text-orientation: upright;
   padding: 1em;
   text-align: right;
@@ -533,7 +567,26 @@ nav li a b {
   align-self: start;
 }
 
+/* long title layout */
+.content--layout-3 {
+  grid-template-columns: 200px 200px 200px 125px;
+  grid-template-rows: 150px 75px 75px;
+  grid-template-areas: "title title title author"
+    "... ... desc desc"
+    "... ... desc desc ";
+}
 
+.content--layout-3 .content__img {
+  grid-column-start: 5;
+  grid-row: 1;
+}
+
+.content--layout-3 .content__author {
+  justify-self: start;
+  align-self: start;
+  writing-mode: sideways-lr;
+  -webkit-writing-mode: sideways-lr;
+}
 
 
 @media screen and (max-width: 50em) {
@@ -588,5 +641,3 @@ nav li a b {
     transform: scale3d(0.5, 0.5, 1);
   }
 }
-
-
