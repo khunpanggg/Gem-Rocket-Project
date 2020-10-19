@@ -11,7 +11,7 @@
 <body>
     <div class="flex-container">
         <!-- <div>Time left: <span id="tim">5</span></div> -->
-        <div>Life remain: <span id="heart">3</span></div>
+        <!-- <div>Life remain: <span id="heart">3</span></div> -->
         <div>Score: <span id="sco">0</span></div>
     </div>
     <center>
@@ -66,11 +66,16 @@
         quiz[1] = new Question("./image/gypsum.png", "2", "6", "3");
         quiz[2] = new Question("./image/calsite.png", "3", "1", "2");
 
-        var heart = 3;
-        document.getElementById("heart").textContent = heart;
-        if (heart <= 0) {
-            alert("dfdf");
-        }
+        // var heart = 3;
+        // document.getElementById("heart").textContent = heart;
+        // if () {
+        //     alert("dfdf");
+        // }
+
+        // if (score == 10) {
+        //     alert("Very good!!!");
+        //     score = 0;
+        // }
 
         var randomQuestion;
         var answers = [];
@@ -112,39 +117,38 @@
 
         function answerA_clicked() {
             var answerA = document.getElementById("answerA").value;
-            checkAnswer(answerA, heart);
+            checkAnswer(answerA);
         }
 
         function answerB_clicked() {
             var answerB = document.getElementById("answerB").value;
-            checkAnswer(answerB, heart);
+            checkAnswer(answerB);
         }
         function answerC_clicked() {
             var answerC = document.getElementById("answerC").value;
 
-            checkAnswer(answerC, heart);
+            checkAnswer(answerC);
         }
 
-        function adjustScore(isCorrect, heart) {
+        function adjustScore(isCorrect) {
             debugger;
             if (isCorrect) {
                 currentScore++;
             } else {
                 if (currentScore > 0) {
                     currentScore--;
-                    this.heart--;
                 }
             }
             document.getElementById("sco").innerHTML = currentScore;
         }
 
-        function checkAnswer(answer, heart) {
+        function checkAnswer(answer) {
             if (answer == randomQuestion.rightAnswer) {
-                adjustScore(true, this.heart);
+                adjustScore(true);
                 btnProvideQuestion();
             } else {
                 btnProvideQuestion();
-                adjustScore(false, this.heart);
+                adjustScore(false);
             }
         }
 
