@@ -21,11 +21,15 @@
     font-family: 'Chakra Petch', sans-serif;
 }
 #question {
+}
+
+#qa {
     font-size: 50px;
     text-align: center;
     margin: 0px 20px 20px 20px;
     font-family: 'Chakra Petch', sans-serif;
 }
+
 button {
     height: 70px;
     width: 400px;

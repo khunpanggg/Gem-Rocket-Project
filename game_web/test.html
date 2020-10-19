@@ -11,11 +11,12 @@
 <body>
     <div class="flex-container">
         <div>Time left: <span id="tim">30</span></div>
-        <div>Score: 0</div>
+        <div>Score: <span id="sco">0</span></div>
     </div>
     <center>
-        <div id="question">บอกหน่อยสิ ว่าแร่นี้มีค่าความแข็งเท่าไร</div>
-        <img src="./image/diamond.png" alt="diadia">
+        <div id="qa">บอกหน่อยสิ ว่าแร่นี้มีค่าความแข็งเท่าไร</div>
+        <div id="question"></div>
+        <!-- <img src="./image/diamond.png" alt="diadia"> -->
         <div id="x"></div>
         <div class="flex-container">
             <div><button id="answerA" onclick="answerA_clicked()">1</button></div>
@@ -25,17 +26,84 @@
     </center>
 
     <script type="text/javascript">
-        // var answer = [];
-        // answer[0] = new ans("1");
-        // answer[1] = new ans("2");
-        // answer[2] = new ans("3");
-        // answer[3] = new ans("4");
-        // answer[4] = new ans("5");
-        // answer[5] = new ans("6");
-        // answer[6] = new ans("7");
-        // answer[7] = new ans("8");
-        // answer[8] = new ans("9");
-        // answer[9] = new ans("10");
+        var quiz = [];
+        quiz[0] = new Question("./image/talc.png", "1", "5", "2");
+        quiz[1] = new Question("./image/gypsum.png", "2", "6", "3");
+        quiz[2] = new Question("./image/calsite.png", "3", "1", "2");
+
+        var randomQuestion;
+        var answers = [];
+        var currentScore = 0;
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            btnProvideQuestion();
+        });
+
+        function Question(question, rightAnswer, wrongAnswer1, wrongAnswer2) {
+            this.question = question;
+            this.rightAnswer = rightAnswer;
+            this.wrongAnswer1 = wrongAnswer1;
+            this.wrongAnswer2 = wrongAnswer2;
+        };
+
+        function shuffle(o) {
+            for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+            return o;
+        };
+
+        function btnProvideQuestion() {
+
+            var randomNumber = Math.floor(Math.random() * quiz.length);
+            randomQuestion = quiz[randomNumber]; //getQuestion
+            answers = [randomQuestion.rightAnswer, randomQuestion.wrongAnswer1, randomQuestion.wrongAnswer2];
+            shuffle(answers);
+
+            document.getElementById("question").innerHTML = randomQuestion.question;
+            document.getElementById("answerA").value = answers[0];
+            document.getElementById("answerA").innerHTML = answers[0];
+            document.getElementById("answerB").value = answers[1];
+            document.getElementById("answerB").innerHTML = answers[1];
+            document.getElementById("answerC").value = answers[2];
+            document.getElementById("answerC").innerHTML = answers[2];
+
+        }
+
+        function answerA_clicked() {
+            var answerA = document.getElementById("answerA").value;
+            checkAnswer(answerA);
+        }
+
+        function answerB_clicked() {
+            var answerB = document.getElementById("answerB").value;
+            checkAnswer(answerB);
+        }
+        function answerC_clicked() {
+            var answerC = document.getElementById("answerC").value;
+
+            checkAnswer(answerC);
+        }
+
+        function adjustScore(isCorrect) {
+            debugger;
+            if (isCorrect) {
+                currentScore++;
+            } else {
+                if (currentScore > 0) {
+                    currentScore--;
+                }
+            }
+            document.getElementById("sco").innerHTML = currentScore;
+        }
+
+        function checkAnswer(answer) {
+            if (answer == randomQuestion.rightAnswer) {
+                adjustScore(true);
+                btnProvideQuestion();
+            } else {
+                btnProvideQuestion();
+                adjustScore(false);
+            }
+        }
 
         var timeleft = 30;
         var downloadTimer = setInterval(function () {
@@ -43,6 +111,7 @@
             document.getElementById("tim").textContent = timeleft;
             if (timeleft <= 0)
                 clearInterval(downloadTimer);
+
         }, 1000);
 
         // อันนี้งง
