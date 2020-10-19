@@ -31,14 +31,17 @@ button {
     width: 400px;
     outline: none;
     background: white;
-    border: black solid 2px;
+    border: indigo solid 5px;
     font-family: 'Chakra Petch', sans-serif;
     font-size: x-large;
+    cursor: pointer;
+    border-radius: 12px;
 }
   
 button:active {
     background-color: indigo;
     color: lavender;
+    border: rgb(162, 96, 209) solid 5px;
  }
 
 img {
