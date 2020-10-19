@@ -26,10 +26,36 @@
     </center>
 
     <script type="text/javascript">
+
+        //img1
+        var img1 = document.createElement("img");
+
+        img1.src = "./image/talc.png";
+        var src = document.getElementById("x");
+
+        src.appendChild(img1);
+
+        //img2
+        var img2 = document.createElement("img");
+
+        img2.src = "./image/gypsum.png";
+        var src = document.getElementById("x");
+
+        src.appendChild(img2);
+
+        //img3
+        var img3 = document.createElement("img");
+
+        img3.src = "./image/calsite.png";
+        var src = document.getElementById("x");
+
+        src.appendChild(img3);
+
+        //quiz
         var quiz = [];
-        quiz[0] = new Question("./image/talc.png", "1", "5", "2");
-        quiz[1] = new Question("./image/gypsum.png", "2", "6", "3");
-        quiz[2] = new Question("./image/calsite.png", "3", "1", "2");
+        quiz[0] = new Question(img1, "1", "5", "2");
+        quiz[1] = new Question(img2, "2", "6", "3");
+        quiz[2] = new Question(img3, "3", "1", "2");
 
         var randomQuestion;
         var answers = [];
@@ -105,6 +131,7 @@
             }
         }
 
+        //time
         var timeleft = 30;
         var downloadTimer = setInterval(function () {
             timeleft--;
@@ -114,12 +141,6 @@
 
         }, 1000);
 
-        // อันนี้งง
-        // var img = document.createElement("img");
-        // img.src = "./image/diamond2.jpg";
-        // var src = document.getElementById("x");
-
-        // src.appendChild(img);
     </script>
 </body>
 
