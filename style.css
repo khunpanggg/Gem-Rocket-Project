@@ -640,3 +640,54 @@ nav li a b {
     transform: scale3d(0.5, 0.5, 1);
   }
 }
+/* CSS GAME */
+.flex { display:flex;}
+
+.field {
+  min-width: 200px;
+  min-height: 30px;
+  margin: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container > div {
+    width: 50vw;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    
+}
+
+
+#qa {
+    font-size: 50px;
+    text-align: center;
+    margin: 0px 20px 20px 20px;
+    
+}
+
+button {
+    height: 80px;
+    width: 180px;
+    outline: none;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+  
+button:active {
+    background-color: rgb(130, 0, 72);
+    color: lavender;
+    border: rgb(209, 96, 115) solid 5px;
+
+ }
+#pic {
+    width: 25vw;
+    height: 25vw;
+    
+}
