@@ -110,18 +110,17 @@
   <article>
 
     <section id="intro" class="content-wrap talc">
-      <!-- รูปคน Friedrich Mohs -->
       <div class="content content--layout--topic">
         <h4 class="content__title title-fantasy">"ความแข็ง"</h4>
         <p class="content__desc">
           คือ ความคงทนต่อการขีดขูด แร่แต่ละชนิดจะมีความแข็งเฉพาะตัว แร่ที่มีความแข็งมากจะสามารถขีดบนแร่ที่มี
-          ความแข็งน้อยกว่าเป็นรอยได้ ความแข็งของแร่แบ่งเป็น 10 ระดับตามระบบของโมห์ (Mohr's scale of hardness) ได้ดังนี้
+          ความแข็งน้อยกว่าเป็นรอยได้ ความแข็งของแร่แบ่งเป็น 10 ระดับตามระบบของโมห์ (Mohr's scale of hardness)
+          ได้ดังนี้
           โดยตัวเลขเรียกแร่ที่มีความแข็งน้อยไปมาก สัญลักษณ์แสดงตัวอย่างวัสดุที่ใช้ทดสอบแร่
         </p>
         <div class="content__author">
           <img src=" https://geoetc.com/wp-content/uploads/2015/11/FriedrichMohs.jpg" alt="">
         </div>
-      </div>
     </section>
 
     <section id="main" class="content-wrap talc">
@@ -363,11 +362,11 @@
         <!--  calsite  1-->
         <div class="carousel-item active">
           <section class="content-wrap calsite" style="background-image: url(./img/background/bg3-1.png)">
-            <div class="content content--layout content--layout-1">
-              <img class="content__img" src="img/diamond/calsite.png" alt="Some image" />
+            <div class=" content content--layout content--layout-1" style="color: rgb(56, 52, 52)">
+              <img class=" content__img" src="img/diamond/calsite.png" alt="Some image" />
               <h3 class="content__title">calsite</h3>
-              <p class="content__author">CALCITE</p>
-              <p class="content__desc">
+              <p class="content__author"">CALCITE</p>
+              <p class=" content__desc">
 
                 <img class="symbol" src="img/symbol/coin.png" alt="symbol">
                 <img class="symbol" src="img/symbol/knife.png" alt="symbol"><br>
@@ -387,10 +386,10 @@
           </section>
         </div>
         <!--  Copper  2-->
-        <div class="carousel-item ">
-          <section class="content-wrap calsite" style="background-image: url(./img/background/bg3-2.png)">
-            <div class="content content--layout content--layout-1">
-              <img class="content__img" src="img/diamond/3/copper.png" alt="Some image" />
+        <div class=" carousel-item ">
+          <section class=" content-wrap calsite" style="background-image: url(./img/background/bg3-2.png)">
+            <div class="content content--layout content--layout-1" style="color: rgb(56, 52, 52)">
+              <img class=" content__img" src="img/diamond/3/copper.png" alt="Some image" />
               <h3 class="content__title">Copper</h3>
               <p class="content__author">Copper</p>
               <p class="content__desc"><br>
@@ -414,8 +413,8 @@
 
         <div class="carousel-item ">
           <section class="content-wrap calsite" style="background-image: url(./img/background/bg3-3.png)">
-            <div class="content content--layout content--layout-1">
-              <img class="content__img" src="img/diamond/3/arsenic.png" alt="Some image" />
+            <div class="content content--layout content--layout-1" style="color: rgb(56, 52, 52)">
+              <img class=" content__img" src="img/diamond/3/arsenic.png" alt="Some image" />
               <h3 class="content__title">arsenic </h3>
               <p class="content__author">arsenic </p>
               <p class="content__desc"><img class="symbol" src="img/symbol/coin.png" alt="symbol">
@@ -438,8 +437,8 @@
 
         <div class="carousel-item ">
           <section class="content-wrap calsite" style="background-image: url(./img/background/bg3-4.png)">
-            <div class="content content--layout content--layout-1">
-              <img class="content__img" src="img/diamond/3/antimony.png" alt="Some image" />
+            <div class="content content--layout content--layout-1" style="color: rgb(56, 52, 52)">
+              <img class=" content__img" src="img/diamond/3/antimony.png" alt="Some image" />
               <h3 class="content__title">Antimony</h3>
               <p class="content__author">Antimony</p>
               <p class="content__desc">
@@ -462,8 +461,8 @@
         <!--   Thorium    5-->
         <div class="carousel-item ">
           <section class="content-wrap calsite" style="background-image: url(./img/background/bg3-5.png)">
-            <div class="content content--layout content--layout-1">
-              <img class="content__img" src="img/diamond/3/thorium.png" alt="Some image" />
+            <div class="content content--layout content--layout-1" style="color: rgb(56, 52, 52)">
+              <img class=" content__img" src="img/diamond/3/thorium.png" alt="Some image" />
               <h3 class="content__title"> Thorium</h3>
               <p class="content__author">Thorium</p>
               <p class="content__desc">
@@ -1187,10 +1186,10 @@
             '<b>สี : </b>' + arr[i].color + '<br>' +
             '<b>คุณสมบัติ :</b>' +
             '<ul>' + arr[i].property + '</ul>' +
-            '<b>ประโยชน์ : </b>' +
+            '<b>ประโยชน์ :</b>' +
             '<ul>' + arr[i].benefit + '</ul>' +
             '</p>';
-          title += arr[i].name;
+          title += '<b>' + arr[i].name + '</b>';
           document.getElementById("title").innerHTML = title;
           document.getElementById("detail").innerHTML = out;
         });
@@ -1199,6 +1198,9 @@
   </script>
   <script src="/js/data.js"></script>
   <script type="text/javascript" src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="transition.js"></script>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
