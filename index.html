@@ -100,7 +100,7 @@
     <article>
       <section id="main" class="content-wrap talc">
         <div class="content content--layout content--layout-1">
-          <img data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="content__img" src="img/diamond/talc.png" alt="Some image" />
+          <img data-tilt data-tilt-glare data-tilt-max-glare="0.8" id="slide1"class="content__img" src="img/diamond/talc.png" alt="Some image" />
           <h3 class="content__title">talc</h3>
           <p class="content__author">Walter Mastricht</p>
           <p class="content__desc">The outer bounds of the world, from within.
@@ -275,7 +275,25 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    
+    <script>
+        gsap.to("#slide1", {
+            scrollTrigger: '#slide1',
+            x:-200
+        });
+    </script>
+    <script>
+      let tl = gsap.timeline({
+        scrollTrigger : {
+          trigger: '#slide1',
+        }
+      });
+      tl.form("#slide1", {x:200, opacity:0, duration:1.5})
 
+
+    </script>
 
   </body>
 </html>
