@@ -10,7 +10,7 @@
 
 <body>
     <div class="flex-container">
-        <!-- <div>Time left: <span id="tim">5</span></div> -->
+        <!-- <div>Time left: <span id="tim">30</span></div> -->
         <!-- <div>Life remain: <span id="heart">3</span></div> -->
         <div>Score: <span id="sco">0</span></div>
     </div>
@@ -79,9 +79,9 @@
         //     alert("dfdf");
         // }
 
-        // if (score == 10) {
+        // if (currrentScore == 10) {
         //     alert("Very good!!!");
-        //     score = 0;
+        //     currentScore = 0;
         // }
 
         var randomQuestion;
@@ -133,7 +133,6 @@
         }
         function answerC_clicked() {
             var answerC = document.getElementById("answerC").value;
-
             checkAnswer(answerC);
         }
 
@@ -159,8 +158,8 @@
             }
         }
 
-        //time
-        // var timeleft = 5;
+        // time
+        // var timeleft = 30;
         // var downloadTimer = setInterval(function () {
         //     timeleft--;
         //     document.getElementById("tim").textContent = timeleft;
