@@ -26,41 +26,27 @@
             <div><button id="answerC" onclick="answerC_clicked()">3</button></div>
         </div>
     </center>
-
     <script type="text/javascript">
-
         // //img1
         // var img1 = document.createElement("img");
-
         // img1.src = "./image/talc.png";
         // var src = document.getElementById("x");
-
         // src.appendChild(img1);
-
         // //img2
         // var img2 = document.createElement("img");
-
         // img2.src = "./image/gypsum.png";
         // var src = document.getElementById("x");
-
         // src.appendChild(img2);
-
         // //img3
         // var img3 = document.createElement("img");
-
         // img3.src = "./image/calsite.png";
         // var src = document.getElementById("x");
-
         // src.appendChild(img3);
-
         //quiz
-
         // var myPix = new Array("./image/talc.png", "./image/gypsum.png", "./image/calsite.png");
-
         // function choosePic() {
         //     var randomNum = Math.floor(Math.random() * myPix.length);
         //     document.getElementById("myPicture").src = myPix[randomNum];
-
         var quiz = [];
         quiz[0] = new Question("./image/talc.png", "1", "5", "2");
         quiz[1] = new Question("./image/gypsum.png", "2", "6", "3");
@@ -72,46 +58,37 @@
         quiz[7] = new Question("./image/topaz.png", "8", "5", "3");
         quiz[8] = new Question("./image/corundum.png", "9", "3", "7");
         quiz[9] = new Question("./image/diamond.png", "10", "1", "8");
-
         // var heart = 3;
         // document.getElementById("heart").textContent = heart;
         // if () {
         //     alert("dfdf");
         // }
-
         // if (currrentScore == 10) {
         //     alert("Very good!!!");
         //     currentScore = 0;
         // }
-
         var randomQuestion;
         var answers = [];
         var currentScore = 0;
         var play = true;
-
         document.addEventListener("DOMContentLoaded", function (event) {
             btnProvideQuestion();
         });
-
         function Question(question, rightAnswer, wrongAnswer1, wrongAnswer2) {
             this.question = question;
             this.rightAnswer = rightAnswer;
             this.wrongAnswer1 = wrongAnswer1;
             this.wrongAnswer2 = wrongAnswer2;
         };
-
         function shuffle(o) {
             for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
             return o;
         };
-
         function btnProvideQuestion() {
-
             var randomNumber = Math.floor(Math.random() * quiz.length);
             randomQuestion = quiz[randomNumber]; //getQuestion
             answers = [randomQuestion.rightAnswer, randomQuestion.wrongAnswer1, randomQuestion.wrongAnswer2];
             shuffle(answers);
-
             document.getElementById("pic").src = randomQuestion.question
             document.getElementById("answerA").value = answers[0];
             document.getElementById("answerA").innerHTML = answers[0];
@@ -119,14 +96,11 @@
             document.getElementById("answerB").innerHTML = answers[1];
             document.getElementById("answerC").value = answers[2];
             document.getElementById("answerC").innerHTML = answers[2];
-
         }
-
         function answerA_clicked() {
             var answerA = document.getElementById("answerA").value;
             checkAnswer(answerA);
         }
-
         function answerB_clicked() {
             var answerB = document.getElementById("answerB").value;
             checkAnswer(answerB);
@@ -135,7 +109,6 @@
             var answerC = document.getElementById("answerC").value;
             checkAnswer(answerC);
         }
-
         function adjustScore(isCorrect) {
             debugger;
             if (isCorrect) {
@@ -147,7 +120,6 @@
             }
             document.getElementById("sco").innerHTML = currentScore;
         }
-
         function checkAnswer(answer) {
             if (answer == randomQuestion.rightAnswer) {
                 adjustScore(true);
@@ -157,7 +129,6 @@
                 adjustScore(false);
             }
         }
-
         // time
         // var timeleft = 30;
         // var downloadTimer = setInterval(function () {
@@ -166,22 +137,18 @@
         //     if (timeleft <= 0)
         //         clearInterval(downloadTimer);
         // }, 1000);
-
         // if (timeleft <= 0) {
         //     alert("dfdf");
         // }
         //game over
         // function isGameover(play) {
         //     if (timeleft <= 0) {
-
         //         // this.play = false;
         //     }
         // }
-
         // if (play == false) {
         //     alert("dfdfdfdfdf");
         // }
-
     </script>
 </body>
 
