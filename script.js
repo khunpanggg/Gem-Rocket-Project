@@ -80,6 +80,16 @@ window.addEventListener('scroll', function () {
     // text2.style.top = value * 1 + 'px';
 })
 
+//
+
+$('.carousel').carousel()
+
+
+//
+
+
+
+
 document.documentElement.className = 'js';
 var supportsCssVars = function () {
     var s = document.createElement('style'),
@@ -92,3 +102,4 @@ var supportsCssVars = function () {
     return support;
 }
 if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
+

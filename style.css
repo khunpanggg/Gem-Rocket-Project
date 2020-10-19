@@ -10,6 +10,7 @@ html {
   /* Enable Safari touch scrolling physics which is needed for scroll snap */
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: y proximity;
+  
   /* suppress scroll anchoring to see the effect */
   overflow-anchor: none;
   scroll-behavior: smooth;
@@ -516,6 +517,7 @@ nav li a b {
   justify-self: end;
   align-self: start;
 }
+
 
 
 
