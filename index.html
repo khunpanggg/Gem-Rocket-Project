@@ -87,6 +87,12 @@
           <span>&nbsp;&nbsp;diamond</span>
         </a>
       </li>
+      <li>
+        <a href="#game">
+          <b style="text-shadow: 2px 2px 4px black">Game</b>
+          <span>&nbsp;&nbsp;</span>
+        </a>
+      </li>
     </ul>
   </nav>
   <section id="parallax" class="parallax">
@@ -382,6 +388,7 @@
                   Learn More
                 </a>
               </p>
+
             </div>
           </section>
         </div>
@@ -1155,8 +1162,31 @@
 
       </div>
     </section>
+
+
+    <!-- Mini Game -->
+    <section id="game" class="content-wrap talc">
+      <div class="d-flex flex-column justify-content-center align-self-center text-center">
+        <div>
+          <h2>Score: <span id="sco">0</span></h2>
+          <p id="qa">บอกหน่อยสิ ว่าแร่นี้มีค่าความแข็งเท่าไร</p>
+        </div>
+        <div>
+          <img id="pic" style="max-width: 300px; height: auto;" src="" alt="">
+          <h1 id="name"></h1>
+        </div>
+        <div class="d-flex justify-content-around" style="pointer-events: all;">
+          <button type="button" id="answerA" onclick="answerA_clicked()"
+            class="btn btn-outline-secondary btn-lg">1</button>
+          <button type="button" id="answerB" onclick="answerB_clicked()"
+            class="btn btn-outline-secondary btn-lg">2</button>
+          <button type="button" id="answerC" onclick="answerC_clicked()"
+            class="btn btn-outline-secondary btn-lg">3</button>
+        </div>
+      </div>
+    </section>
+
   </article>
-                                                              
   <!-- Modal -->
   <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
     aria-hidden="true">
@@ -1198,6 +1228,7 @@
     }
   </script>
   <script src="/js/data.js"></script>
+  <script src="/js/game.js"></script>
   <script type="text/javascript" src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
