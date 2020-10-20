@@ -3,7 +3,7 @@ $('a[href^="#"]').click(function (event) {
     var target = $(id).offset().top;
     $('html, body').animate({
         scrollTop: target
-    }, 1600);
+    }, 1000);
     event.preventDefault();
 });
 
