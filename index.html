@@ -97,6 +97,7 @@
         <span id="text" class="text2">Mohs scale of mineral hardness</span>
       </div>
     </section>
+<<<<<<< Updated upstream
     <article>
       <section id="main" class="content-wrap talc">
         <div class="content content--layout content--layout-1">
@@ -278,4 +279,59 @@
 
 
   </body>
+=======
+
+  </article>
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="title"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id="detail" class="modal-body"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script>
+    function gemData(arr) {
+      $(document).ready(function () {
+        $("a").click(function () {
+          var i = $(this).attr("id");
+          var out = "";
+          var title = "";
+          out += '<p>' +
+            '<b>สูตรเคมี : </b>' + arr[i].formula + '<br>' +
+            '<b>ประเภท : </b>' + arr[i].type + '<br>' +
+            '<b>สี : </b>' + arr[i].color + '<br>' +
+            '<b>คุณสมบัติ :</b>' +
+            '<ul>' + arr[i].property + '</ul>' +
+            '<b>ประโยชน์ :</b>' +
+            '<ul>' + arr[i].benefit + '</ul>' +
+            '</p>';
+          title += '<b>' + arr[i].name + '</b>';
+          document.getElementById("title").innerHTML = title;
+          document.getElementById("detail").innerHTML = out;
+        });
+      });
+    }
+  </script>
+  <script src="/js/data.js"></script>
+  <script src="./js/game.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="transition.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+</body>
+
+>>>>>>> Stashed changes
 </html>
