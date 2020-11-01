@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'ChulaCharasNew', sans-serif;
 }
 
 html {
@@ -335,7 +334,7 @@ nav li a b {
 }
 
 .calsite {
-  background-color: #ddc470;
+  background-color: #80463c;
   z-index: 3;
 }
 
@@ -345,7 +344,7 @@ nav li a b {
 }
 
 .apatite {
-  background-color: #d2e6f7;
+  background-color: #2a5d6e;
   z-index: 5;
 }
 
@@ -466,7 +465,7 @@ nav li a b {
 
 .content__title {
   grid-area: title;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'nexa_boldregular', sans-serif;
   letter-spacing: -0.025em;
   font-size: 8em;
   line-height: 160px;
