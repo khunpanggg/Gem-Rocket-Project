@@ -270,7 +270,7 @@ nav a {
   align-content: center;
 }
 
-nav a span {
+nav a span.text-name {
   color: transparent;
   text-decoration: none;
 }
@@ -307,7 +307,6 @@ nav a.active * {
 nav li a b {
   font-size: 1.5rem;
 }
-//สัญลักษณ์สี่เหลี่ยมตรงแถบเมนู
 a .text-defult{
   color: #efefef;
 }
@@ -321,7 +320,7 @@ a:hover .text-hover {
 	display: inline; 
 	color: #efefef;
 }
-a.active .text-defult, a .text-hover { 
+a.active .text-defult { 
 	display: none; 
 }
 a.active .text-active { 
