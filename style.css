@@ -298,7 +298,7 @@ nav a.active .arrow-up {
   border-color: #efefef;
 }
 
-nav a.active * {
+nav a.text-name.active * {
   color: rgb(255, 255, 255);
   text-shadow: crimson 4px 1.75px 0;
   text-decoration: none;
@@ -332,7 +332,7 @@ a.active .text-active {
   width: 15px;
   height: 15px;
   border-top: 5px solid #cfcfcf;
-  border-right: 5px solid #cfcfcf;
+  border-right: 5px solid white;
   transform: rotate(-45deg);
 }
 
