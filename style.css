@@ -320,7 +320,7 @@ a:hover .text-hover {
 	display: inline; 
 	color: #efefef;
 }
-a.active .text-defult { 
+a.active .text-hover, a.active .text-defult { 
 	display: none; 
 }
 a.active .text-active { 
