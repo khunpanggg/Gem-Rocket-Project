@@ -317,7 +317,7 @@ a.active .text-active, a.active .text-name {
   display: inline; 
   color: #fff;
   mix-blend-mode: difference;
-  text-shadow: rgb(73, 71, 69) 4px 1.75px 0;
+  text-shadow:firebrick 4px 1.75px 0;
   text-decoration: none;
 }
 
