@@ -1,7 +1,13 @@
+/* font-family: 'Architects Daughter', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Limelight', cursive;
+font-family: 'Sarabun', sans-serif;
+font-family: 'Tenor Sans', sans-serif; */
 * {
   margin: 0;
   padding: 0;
-  font-family: 'ChulaCharasNew', sans-serif;
 }
 
 html {
@@ -128,6 +134,7 @@ body {
 }
 
 .parallax {
+  font-family: 'Staatliches', cursive;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -262,7 +269,7 @@ nav a {
   text-transform: uppercase;
   color: #efefef;
   text-decoration: none;
-  font-family: 'nexa_boldregular', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 nav a {
@@ -307,7 +314,7 @@ a:hover .text-defult, a:hover .text-active {
 a:hover .text-hover, a:hover .text-name { 
   display: inline; 
   color: #fff;
-  text-shadow: rgb(73, 71, 69) 4px 2px 0;
+  text-shadow: rgb(73, 71, 69) 4px 1.75px 0;
   text-decoration: none;
 }
 a.active .text-hover, a.active .text-defult { 
@@ -316,8 +323,7 @@ a.active .text-hover, a.active .text-defult {
 a.active .text-active, a.active .text-name { 
   display: inline; 
   color: #fff;
-  mix-blend-mode: difference;
-  text-shadow:firebrick 4px 1.75px 0;
+  text-shadow:firebrick 4px 1px 0;
   text-decoration: none;
 }
 
@@ -420,13 +426,14 @@ a.active .text-active, a.active .text-name {
 }
 
 .content {
+  font-family: 'Sarabun', sans-serif;
   position: relative;
   display: grid;
   color: white;
 }
 
 .title-fantasy {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Sarabun', sans-serif;
   font-weight: 500;
   font-style: italic;
   text-shadow: 5px 3px gold;
@@ -477,8 +484,7 @@ a.active .text-active, a.active .text-name {
 
 .content__title {
   grid-area: title;
-  font-family: 'nexa_boldregular', sans-serif;
-  letter-spacing: -0.025em;
+  font-family: 'Bebas Neue', cursive;
   font-size: 8em;
   line-height: 160px;
   margin: 0;
@@ -488,6 +494,7 @@ a.active .text-active, a.active .text-name {
 }
 
 .content__author {
+  font-family: 'Bebas Neue', cursive;
   grid-area: author;
   margin: 0;
   -webkit-writing-mode: vertical-lr;
@@ -549,7 +556,9 @@ a.active .text-active, a.active .text-name {
   margin: 0;
   padding: 0.5em;
 }
-
+.modal{
+  font-family: 'Sarabun', sans-serif;
+}
 /* Different layouts */
 
 /* layout-2 */
