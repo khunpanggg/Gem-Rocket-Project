@@ -54,8 +54,14 @@ let flower2 = document.getElementById("flower2")
 let hand = document.getElementById("hand")
 let group_diamond = document.getElementById("group_diamond")
 let camera = document.getElementById("camera")
-
-
+let effect1 = document.getElementById("effect1")
+let effect2 = document.getElementById("effect2")
+let effect3 = document.getElementById("effect3")
+let effect4 = document.getElementById("effect4")
+let effect5 = document.getElementById("effect5")
+let mohs = document.getElementById("mohs")
+let intro = document.getElementById("intro")
+let datamohs = document.getElementById("data-mohs")
 
 window.addEventListener('scroll', function () {
     var value = window.scrollY;
@@ -76,10 +82,29 @@ window.addEventListener('scroll', function () {
     group_diamond.style.height = 'auto';
     hand.style.left = value * 0.25 + 'px';
     camera.style.top = value * 0.6 + 'px';
+
+    // mohs
+    mohs.style.top = Math.max(500 - value * 0.75, 100) + 'px';
     // text1.style.top = value * 2 + 'px';
     // text2.style.top = value * 1 + 'px';
 })
 
+window.addEventListener('mousemove', function (event) {
+    //console.log(event);
+
+    effect1.style.left = `calc(40vw + ${event.screenX / 100}px)`;
+    effect1.style.top = `${event.screenY / 100 * 1.4}px`;
+    effect2.style.left = `calc(40vw + ${event.screenX / 100 * 8}px)`;
+    effect2.style.top = `${event.screenY / 100 * 12}px`;
+    effect3.style.left = `calc(40vw + ${event.screenX / 100}px)`;
+    effect3.style.top = `${event.screenY / 100 * 0.8}px`;
+    effect4.style.left = `calc(40vw + ${event.screenX / 100 * 4}px)`;
+    effect4.style.top = `${event.screenY / 100 * 2}px`;
+    effect5.style.left = `calc(40vw + ${event.screenX / 100}px)`;
+    effect5.style.top = `${event.screenY / 100 * 3}px`;
+    datamohs.style.left = `calc(${event.screenX / 100}px)`;
+    datamohs.style.top = `${event.screenY / 100 * 3}px`;
+});
 //
 
 $('.carousel').carousel()

@@ -151,7 +151,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 100px;
-  background: linear-gradient(to top, #abc1b9, transparent);
+  background: linear-gradient(to top, #19364d, transparent);
   z-index: 10000;
 }
 
@@ -292,7 +292,7 @@ nav li:hover * {
 }
 
 nav li:hover .arrow-up {
-  border-color:#efefef;
+  border-color: #efefef;
 }
 
 nav a.active .arrow-up {
@@ -302,28 +302,39 @@ nav a.active .arrow-up {
 nav li a b {
   font-size: 1.5rem;
 }
-a .text-defult{
+
+a .text-defult {
   color: #efefef;
 }
-a .text-hover, a .text-active { 
-	display: none; 
+
+a .text-hover,
+a .text-active {
+  display: none;
 }
-a:hover .text-defult, a:hover .text-active { 
-	display: none; 
+
+a:hover .text-defult,
+a:hover .text-active {
+  display: none;
 }
-a:hover .text-hover, a:hover .text-name { 
-  display: inline; 
+
+a:hover .text-hover,
+a:hover .text-name {
+  display: inline;
   color: #fff;
   text-shadow: rgb(73, 71, 69) 4px 1.75px 0;
   text-decoration: none;
 }
-a.active .text-hover, a.active .text-defult { 
-	display: none; 
+
+a.active .text-hover,
+a.active .text-defult {
+  display: none;
 }
-a.active .text-active, a.active .text-name { 
-  display: inline; 
+
+a.active .text-active,
+a.active .text-name {
+  display: inline;
   color: #fff;
-  text-shadow:firebrick 4px 1px 0;
+  text-shadow: firebrick 4px 1px 0;
   text-decoration: none;
 }
 
@@ -341,13 +352,21 @@ a.active .text-active, a.active .text-name {
 
 }
 
+.mohs {
+  background-color: #19364d;
+  z-index: 1;
+  display: flex;
+  flex-direction: row !important;
+  overflow: hidden;
+}
+
 .talc {
-  background-color: #abc1b9;
+  background-color: #547372;
   z-index: 1;
 }
 
 .gypsum {
-  background-image: url("./img/background/bg2-1.png");
+  background-color: #19364d;
   z-index: 2;
 }
 
@@ -391,6 +410,11 @@ a.active .text-active, a.active .text-name {
   z-index: 5;
 }
 
+.game-bg {
+  background-color: #abc1b9;
+  z-index: 1;
+}
+
 /* สัญลักษณ์พวกมีด มือ */
 .symbol {
   padding-bottom: 10px;
@@ -432,14 +456,26 @@ a.active .text-active, a.active .text-name {
   color: white;
 }
 
-.title-fantasy {
+.mosh-title {
   font-family: 'Sarabun', sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  text-shadow: 5px 3px gold;
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  font-size: 4em;
+  text-shadow: 6px 2px 2px #a94a3a;
+}
+
+.subtitle {
+  font-size: 16px;
+}
+
+.img-layer {
+  width: 600px;
+  height: 100%;
+  display: flex;
+}
+
+.img-layer img {
+  position: absolute;
+  width: 600px;
+  height: auto;
 }
 
 .content--layout {
@@ -457,11 +493,11 @@ a.active .text-active, a.active .text-name {
   pointer-events: auto;
   justify-content: center;
   align-content: center;
-  grid-template-columns: 50px 300px 300px 200px;
-  grid-template-rows: 150px 150px 150px;
-  grid-template-areas: "... title title title"
-    "author ... desc desc"
-    "author ... desc desc";
+  grid-template-columns: 500px 0px 500px 500px;
+  grid-template-rows: 150px 150px 300px;
+  grid-template-areas: "title title author author"
+    "desc ... author author"
+    "desc ... author author";
 }
 
 .content--related {
@@ -556,9 +592,11 @@ a.active .text-active, a.active .text-name {
   margin: 0;
   padding: 0.5em;
 }
-.modal{
+
+.modal {
   font-family: 'Sarabun', sans-serif;
 }
+
 /* Different layouts */
 
 /* layout-2 */
