@@ -103,7 +103,7 @@ window.addEventListener('mousemove', function (event) {
     effect5.style.left = `calc(40vw + ${event.screenX / 100}px)`;
     effect5.style.top = `${event.screenY / 100 * 3}px`;
     datamohs.style.left = `calc(${event.screenX / 100}px)`;
-    datamohs.style.top = `${event.screenY / 100 * 3}px`;
+    datamohs.style.top = `${event.screenY / 100 * 0.02}px`;
 });
 //
 
