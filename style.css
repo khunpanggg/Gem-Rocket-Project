@@ -281,7 +281,6 @@ nav a * {
 
 nav li:hover * {
   color: rgb(255, 255, 255);
-  text-shadow: firebrick 4px 1.75px 0;
   text-decoration: none;
 }
 
@@ -289,19 +288,8 @@ nav li:hover .arrow-up {
   border-color:#efefef;
 }
 
-nav a.active {
-  color: crimson;
-  text-decoration: none;
-}
-
 nav a.active .arrow-up {
   border-color: #efefef;
-}
-
-nav a span.text-name.active * {
-  color: rgb(255, 255, 255);
-  text-shadow: crimson 4px 1.75px 0;
-  text-decoration: none;
 }
 
 nav li a b {
@@ -317,15 +305,20 @@ a:hover .text-defult, a:hover .text-active {
 	display: none; 
 }
 a:hover .text-hover, a:hover .text-name { 
-	display: inline; 
-	color: #efefef;
+  display: inline; 
+  color: #fff;
+  text-shadow: rgb(73, 71, 69) 4px 2px 0;
+  text-decoration: none;
 }
 a.active .text-hover, a.active .text-defult { 
 	display: none; 
 }
 a.active .text-active, a.active .text-name { 
-	display: inline; 
-	color: #efefef;
+  display: inline; 
+  color: #fff;
+  mix-blend-mode: difference;
+  text-shadow: rgb(73, 71, 69) 4px 1.75px 0;
+  text-decoration: none;
 }
 
 .arrow-up {
