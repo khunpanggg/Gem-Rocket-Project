@@ -316,14 +316,14 @@ a .text-hover, a .text-active {
 a:hover .text-defult, a:hover .text-active { 
 	display: none; 
 }
-a:hover .text-hover { 
+a:hover .text-hover, a:hover .text-name { 
 	display: inline; 
 	color: #efefef;
 }
 a.active .text-hover, a.active .text-defult { 
 	display: none; 
 }
-a.active .text-active { 
+a.active .text-active, a.active .text-name { 
 	display: inline; 
 	color: #efefef;
 }
