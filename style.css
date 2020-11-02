@@ -298,7 +298,7 @@ nav a.active .arrow-up {
   border-color: #efefef;
 }
 
-nav a.text-name.active * {
+nav a span.text-name.active * {
   color: rgb(255, 255, 255);
   text-shadow: crimson 4px 1.75px 0;
   text-decoration: none;
