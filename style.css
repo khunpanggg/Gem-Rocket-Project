@@ -281,12 +281,12 @@ nav a * {
 
 nav li:hover * {
   color: rgb(255, 255, 255);
-  text-shadow: crimson 4px 1.75px 0;
+  text-shadow: firebrick 4px 1.75px 0;
   text-decoration: none;
 }
 
 nav li:hover .arrow-up {
-  border-color: white;
+  border-color:#efefef;
 }
 
 nav a.active {
@@ -295,7 +295,7 @@ nav a.active {
 }
 
 nav a.active .arrow-up {
-  border-color: white;
+  border-color: #efefef;
 }
 
 nav a.active * {
