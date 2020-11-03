@@ -22,8 +22,8 @@ function tl1() {
         }
     });
     tl.from(section_1[0], {
-            x: -1000,
-        })
+        x: -1000,
+    })
         .from(section_1[2], {
             x: -1000,
         })
@@ -35,7 +35,7 @@ function tl1() {
         })
 }
 
-function tl2(){
+function tl2() {
     var tl = gsap.timeline({
         scrollTrigger: {
             trigger: '#secondary',
@@ -48,8 +48,8 @@ function tl2(){
         },
     });
     tl.from(section_2[0], {
-            x: 1000,
-        })
+        x: 1000,
+    })
         .from(section_2[2], {
             x: 1000,
         })
@@ -61,7 +61,7 @@ function tl2(){
         })
 }
 
-function tl3(){
+function tl3() {
     var tl = gsap.timeline({
         scrollTrigger: {
             trigger: '#third',
@@ -74,8 +74,8 @@ function tl3(){
         }
     });
     tl.from(section_3[0], {
-            x: -1000,
-        })
+        x: -1000,
+    })
         .from(section_3[2], {
             x: -1000,
         })
@@ -87,7 +87,7 @@ function tl3(){
         })
 }
 
-function tl4(){
+function tl4() {
     var tl = gsap.timeline({
         scrollTrigger: {
             trigger: '#fourth',
@@ -100,8 +100,8 @@ function tl4(){
         }
     });
     tl.from(section_4[0], {
-            x: 1000,
-        })
+        x: 1000,
+    })
         .from(section_4[2], {
             x: 1000,
         })
@@ -113,7 +113,7 @@ function tl4(){
         })
 }
 
-function tl5(){
+function tl5() {
     var tl = gsap.timeline({
         scrollTrigger: {
             trigger: '#fifth',
@@ -130,25 +130,25 @@ function tl5(){
 
         duration: 0.1
     })
-    .from(section_5[2], {
-        x: -1000,
+        .from(section_5[2], {
+            x: -1000,
 
-        duration: 0.1
-    })
-    .from(section_5[1], {
-        x: -1000,
+            duration: 0.1
+        })
+        .from(section_5[1], {
+            x: -1000,
 
-        duration: 0.1
-    })
-    .from(section_5[3], {
-        x: -1000,
+            duration: 0.1
+        })
+        .from(section_5[3], {
+            x: -1000,
 
-        duration: 0.1
-    })
+            duration: 0.1
+        })
 }
 
 
-function tl6(){
+function tl6() {
     var tl = gsap.timeline({
         scrollTrigger: {
             trigger: '#sixth',
@@ -165,24 +165,24 @@ function tl6(){
 
         duration: 0.1
     })
-    .from(section_6[2], {
-        x: 1000,
+        .from(section_6[2], {
+            x: 1000,
 
-        duration: 0.1
-    })
-    .from(section_6[1], {
-        x: 1000,
+            duration: 0.1
+        })
+        .from(section_6[1], {
+            x: 1000,
 
-        duration: 0.1
-    })
-    .from(section_6[3], {
-        x: 1000,
+            duration: 0.1
+        })
+        .from(section_6[3], {
+            x: 1000,
 
-        duration: 0.1
-    })
+            duration: 0.1
+        })
 }
 
-function tl7(){    
+function tl7() {
     var tl = gsap.timeline({
         scrollTrigger: {
             trigger: '#seventh',
@@ -195,10 +195,10 @@ function tl7(){
         }
     });
     tl.from(section_7[0], {
-            x: -1000,
+        x: -1000,
 
-            duration: 0.1
-        })
+        duration: 0.1
+    })
         .from(section_7[2], {
             x: -1000,
 
@@ -216,7 +216,7 @@ function tl7(){
         })
 }
 
-function tl8(){
+function tl8() {
     var tl = gsap.timeline({
         scrollTrigger: {
             trigger: '#eighth',
@@ -229,8 +229,8 @@ function tl8(){
         }
     });
     tl.from(section_8[0], {
-            x: 1000,
-        })
+        x: 1000,
+    })
         .from(section_8[2], {
             x: 1000,
         })
@@ -242,7 +242,7 @@ function tl8(){
         })
 }
 
-function tl9(){
+function tl9() {
     var tl = gsap.timeline({
         scrollTrigger: {
             trigger: '#ninth',
@@ -255,8 +255,8 @@ function tl9(){
         }
     });
     tl.from(section_9[0], {
-            x: -1000,
-        })
+        x: -1000,
+    })
         .from(section_9[2], {
             x: -1000,
         })
@@ -269,9 +269,12 @@ function tl9(){
 }
 
 
-function tl10(){
+function tl10() {
     var tl = gsap.timeline({
         scrollTrigger: {
+            start: "top center",
+            end: "top top",
+            toggleActions: "play resume none restart",
             trigger: '#tenth',
         },
         default: {
@@ -279,8 +282,8 @@ function tl10(){
         }
     });
     tl.from(section_10[0], {
-            x: 1000,
-        })
+        x: 1000,
+    })
         .from(section_10[2], {
             x: 1000,
         })
