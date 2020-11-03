@@ -1308,22 +1308,22 @@
 
 
     <!-- Mini Game -->
-    <section id="game" class="content-wrap game-bg">
+    <section id="game">
       <div class="d-flex flex-column justify-content-center align-self-center text-center">
         <div>
-          <h2>Score: <span id="sco">0</span></h2>
-          <p id="qa">บอกหน่อยสิ ว่าแร่นี้มีค่าความแข็งเท่าไร</p>
+          <h2 class="game">Score: <span id="sco">0</span></h2>
+          <p id="qa" class="game">บอกหน่อยสิ ว่าแร่นี้มีค่าความแข็งเท่าไร</p>
         </div>
         <div>
           <img id="pic" style="max-width: 300px; height: auto;" src="" alt="">
-          <h1 id="name"></h1>
+          <h1 id="name" class="game"></h1>
         </div>
         <div class="d-flex justify-content-around" style="pointer-events: all;">
-          <button type="button" id="answerA" onclick="answerA_clicked()"
+          <button class="game" type="button" id="answerA" onclick="answerA_clicked()"
             class="btn btn-outline-secondary btn-lg">1</button>
-          <button type="button" id="answerB" onclick="answerB_clicked()"
+          <button class="game" type="button" id="answerB" onclick="answerB_clicked()"
             class="btn btn-outline-secondary btn-lg">2</button>
-          <button type="button" id="answerC" onclick="answerC_clicked()"
+          <button class="game" type="button" id="answerC" onclick="answerC_clicked()"
             class="btn btn-outline-secondary btn-lg">3</button>
         </div>
       </div>
@@ -1370,8 +1370,8 @@
       });
     }
   </script>
-  <script src="/js/data.js"></script>
-  <script src="/js/game.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/game.js"></script>
   <script type="text/javascript" src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
