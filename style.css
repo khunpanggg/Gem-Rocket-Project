@@ -700,7 +700,7 @@ a.active .text-name {
 }
 
 #game {
-  background-color:#2b2b6d;
+  background-color:#663d4b;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -714,37 +714,37 @@ button.game {
   height: 70px;
   width: 300px;
   outline: none;
-  background: white;
-  border: #4c2b6d solid 5px;
-  font-family: 'Bebas Neue', cursive;
+  background: rgb(226, 220, 203);
+  border: #574866 solid 5px;
+  font-family: 'Chakra Petch', sans-serif;
   font-size: 40px;
   cursor: pointer;
   border-radius: 12px;
   margin: 20px;
-  color: #4c2b6d;
+  color: #574866;
 }
 
 button.game:active {
-  background-color: #2b6d6d;
+  background-color: #517f80d5;
   color: lavender;
   border: #508787 solid 5px;
 }
 
 h1.game {
   margin: 20px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 h2.game {
   text-align: center;
   line-height: 75px;
   font-size: 30px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 #qa {
   font-size: 50px;
   text-align: center;
   margin: 0px 20px 20px 20px;
-  font-family: 'Sarabun', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
 }
