@@ -711,16 +711,16 @@ a.active .text-name {
 }
 
 button.game {
-  height: 70px;
-  width: 300px;
+  height: 50px;
+  width: 200px;
   outline: none;
   background: rgb(226, 220, 203);
   border: #574866 solid 5px;
   font-family: 'Chakra Petch', sans-serif;
-  font-size: 40px;
+  font-size: 25px;
   cursor: pointer;
   border-radius: 12px;
-  margin: 20px;
+  margin: 10px;
   color: #574866;
 }
 
@@ -733,18 +733,31 @@ button.game:active {
 h1.game {
   margin: 20px;
   font-family: 'Chakra Petch', sans-serif;
+  font-size: 30px;
 }
 
-h2.game {
+/* h2.game {
   text-align: center;
   line-height: 75px;
   font-size: 30px;
   font-family: 'Chakra Petch', sans-serif;
-}
+} */
 
 #qa {
-  font-size: 50px;
+  font-size: 35px;
   text-align: center;
   margin: 0px 20px 20px 20px;
   font-family: 'Chakra Petch', sans-serif;
+}
+
+#next {
+  margin-left: 60vw;
+}
+
+/* button#next {
+  width: 60px;
+} */
+
+#demo {
+  height: 120px;
 }
