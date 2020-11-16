@@ -756,9 +756,7 @@ h2.game {
 #next {
   margin-left: 60vw;
   border-radius: 50px;
-  text-decoration: none;
-  overflow: hidden;
-  transition: 0.2s;
+  outline: none;
 }
 
 /* button#next {
@@ -770,10 +768,10 @@ h2.game {
   width: 200px;
   margin:auto;
   font-family: 'Staatliches', cursive;
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: left;
 }
 ul.demo {
   list-style-type: none;
