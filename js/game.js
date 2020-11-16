@@ -114,6 +114,7 @@ function answerC_clicked() {
   function adjustScore(isCorrect) {
     $(".bgame").click(function() {
       var idName = $(this).attr("id");
+      var val = $(this).val();
       if (isCorrect) {
         currentScore++;
         // Disable #x
@@ -124,16 +125,14 @@ function answerC_clicked() {
           // Disable #x
           $( ".bgame" ).prop( "disabled", true );
           document.getElementById(idName).style.backgroundColor = "red";
-          listLevel();
+          listLevel(val);
 //         }
       }
       // document.getElementById("sco").innerHTML = currentScore;
       });
   }
-  function listLevel(){
-    $(".bgame").click(function() {
-      var val = $(this).val();
-      var hint, i;
+  function listLevel(value){
+      var val, hint, i;
       if (val != randomQuestion.rightAnswer) {
             if (val == 1) {
               hint = ["Talc"]
@@ -174,7 +173,6 @@ function answerC_clicked() {
             text += "</ul>";
             document.getElementById("demo").innerHTML = text;
         }
-      });
   }
   function checkAnswer(answer) {
     if (answer == randomQuestion.rightAnswer) {
