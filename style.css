@@ -761,6 +761,6 @@ h2.game {
 #demo {
   height: 120px;
 }
-ul#demo {
+ul.demo {
   list-style-type: none;
 }
