@@ -748,3 +748,16 @@ h2.game {
   margin: 0px 20px 20px 20px;
   font-family: 'Chakra Petch', sans-serif;
 }
+
+#next {
+  margin-left: 60vw;
+  border-radius: 50px;
+}
+
+/* button#next {
+  width: 60px;
+} */
+
+#demo {
+  height: 120px;
+}
