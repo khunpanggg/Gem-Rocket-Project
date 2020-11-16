@@ -110,13 +110,10 @@ function answerC_clicked() {
   checkAnswer(answerC);
 }
 
-$(".bgame").click(function() {
-      var val = $(this).val();
-      var hint, i;
-      var idName = $(this).attr("id");
+
   function adjustScore(isCorrect) {
-
-
+    $(".bgame").click(function() {
+      var idName = $(this).attr("id");
       if (isCorrect) {
         currentScore++;
         // Disable #x
@@ -131,48 +128,53 @@ $(".bgame").click(function() {
 //         }
       }
       // document.getElementById("sco").innerHTML = currentScore;
+      });
   }
   function listLevel(){
-    if (val != randomQuestion.rightAnswer) {
-          if (val == 1) {
-            hint = ["Talc"]
-          }
-          if (val == 2) {
-            hint = ["Gypsum", "Calcium", "Selenio", "Cadmium", "Sulfur", "Tellurium", "Bismuth"]
-          }
-          if (val == 3) {
-            hint = ["Calsite", "Copper", "Arsenic", "Antimony", "Thorium"]
-          }
-          if (val == 4) {
-            hint = ["Fluorite", "Iron", "Nickel"]
-          }
-          if (val == 5) {
-            hint = ["Apatite", "Cobalt", "Zirconium", "Palladium"]
-          }
-          if (val == 6) {
-            hint = ["Orthoclase", "Titanium", "Germanium", "Niobium", "Rhodium"]
-          }
-          if (val == 7) {
-            hint = ["Quartz", "Osmium", "Rhenium", "Vanadium"]
-          }
-          if (val == 8) {
-            hint = ["Topaz", "Zirconia"]
-          }
-          if (val == 9) {
-            hint = ["Corundum", "Tungsten Carbide", "Titanium Carbide"]
-          }
-          if (val == 10) {
-            hint = ["Diamond"]
-          }
-          hLen = hint.length;
-          hLen = hint.length;
-          text = "<ul>";
-          for (i = 0; i < hLen; i++) {
-            text += "<li>" + hint[i] + "</li>";
-          }
-          text += "</ul>";
-          document.getElementById("demo").innerHTML = text;
+    $(".bgame").click(function() {
+      var val = $(this).val();
+      var hint, i;
+      if (val != randomQuestion.rightAnswer) {
+            if (val == 1) {
+              hint = ["Talc"]
+            }
+            if (val == 2) {
+              hint = ["Gypsum", "Calcium", "Selenio", "Cadmium", "Sulfur", "Tellurium", "Bismuth"]
+            }
+            if (val == 3) {
+              hint = ["Calsite", "Copper", "Arsenic", "Antimony", "Thorium"]
+            }
+            if (val == 4) {
+              hint = ["Fluorite", "Iron", "Nickel"]
+            }
+            if (val == 5) {
+              hint = ["Apatite", "Cobalt", "Zirconium", "Palladium"]
+            }
+            if (val == 6) {
+              hint = ["Orthoclase", "Titanium", "Germanium", "Niobium", "Rhodium"]
+            }
+            if (val == 7) {
+              hint = ["Quartz", "Osmium", "Rhenium", "Vanadium"]
+            }
+            if (val == 8) {
+              hint = ["Topaz", "Zirconia"]
+            }
+            if (val == 9) {
+              hint = ["Corundum", "Tungsten Carbide", "Titanium Carbide"]
+            }
+            if (val == 10) {
+              hint = ["Diamond"]
+            }
+            hLen = hint.length;
+            hLen = hint.length;
+            text = "<ul>";
+            for (i = 0; i < hLen; i++) {
+              text += "<li>" + hint[i] + "</li>";
+            }
+            text += "</ul>";
+            document.getElementById("demo").innerHTML = text;
         }
+      });
   }
   function checkAnswer(answer) {
     if (answer == randomQuestion.rightAnswer) {
@@ -183,6 +185,6 @@ $(".bgame").click(function() {
       // btnProvideQuestion();
     }
   }
-});
+
 
 $(window).load(btnProvideQuestion());
