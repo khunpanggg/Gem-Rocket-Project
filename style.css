@@ -38,7 +38,9 @@ body {
 }
 
 .row {
-  padding-top: 15%;
+  padding-top: 2%;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .btn {
@@ -754,8 +756,6 @@ h2.game {
 }
 
 #next {
-  margin-left: 60vw;
-  border-radius: 50px;
   outline: none;
 }
 
