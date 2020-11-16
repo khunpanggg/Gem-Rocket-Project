@@ -76,6 +76,7 @@ function btnProvideQuestion() {
   // Enable #x
   $( ".bgame" ).prop( "disabled", false );
   $( "#demo" ).empty();
+  document.getElementById("sco").innerHTML = "Answer";
   var randomNumber = Math.floor(Math.random() * quiz.length);
   randomQuestion = quiz[randomNumber]; //getQuestion
   answers = [randomQuestion.rightAnswer, randomQuestion.wrongAnswer1, randomQuestion.wrongAnswer2];
