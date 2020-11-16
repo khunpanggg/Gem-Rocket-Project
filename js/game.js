@@ -122,38 +122,18 @@ $(".bgame").click(function() {
         // Disable #x
         $( ".bgame" ).prop( "disabled", true );
         document.getElementById(idName).style.backgroundColor = "green";
-
       } else {
-        if (currentScore > 0) {
+//         if (currentScore > 0) {
           // Disable #x
           $( ".bgame" ).prop( "disabled", true );
           document.getElementById(idName).style.backgroundColor = "red";
-        }
+          listLevel();
+//         }
       }
       // document.getElementById("sco").innerHTML = currentScore;
   }
-
-  function checkAnswer(answer) {
-    if (answer == randomQuestion.rightAnswer) {
-      adjustScore(true);
-
-      // btnProvideQuestion();
-    } else {
-      adjustScore(false);
-      // btnProvideQuestion();
-      // var fruits, text, fLen, i;
-      // fruits = ["aa", "bb", "cc", "dd", "ee", "ff", "gg"]
-      // fLen = fruits.length;
-      // adjustScore(false);
-      // fLen = fruits.length;
-
-      // text = "<ul>";
-      // for (i = 0; i < fLen; i++) {
-      //   text += "<li>" + fruits[i] + "</li>";
-      // }
-      // text += "</ul>";
-
-        if (val != randomQuestion.rightAnswer) {
+  function listLevel(){
+    if (val != randomQuestion.rightAnswer) {
           if (val == 1) {
             hint = ["Talc"]
           }
@@ -193,6 +173,14 @@ $(".bgame").click(function() {
           text += "</ul>";
           document.getElementById("demo").innerHTML = text;
         }
+  }
+  function checkAnswer(answer) {
+    if (answer == randomQuestion.rightAnswer) {
+      adjustScore(true);
+      // btnProvideQuestion();
+    } else {
+      adjustScore(false);
+      // btnProvideQuestion();
     }
   }
 });
