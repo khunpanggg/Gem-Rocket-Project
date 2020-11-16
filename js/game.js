@@ -125,14 +125,16 @@ function answerC_clicked() {
           // Disable #x
           $( ".bgame" ).prop( "disabled", true );
           document.getElementById(idName).style.backgroundColor = "red";
-          listLevel(val);
+          listLevel();
 //         }
       }
       // document.getElementById("sco").innerHTML = currentScore;
       });
   }
-  function listLevel(value){
-      var val, hint, i;
+  function listLevel(){
+    $(".bgame").click(function()
+      var val = $(this).val();	
+      var hint, i;
       if (val != randomQuestion.rightAnswer) {
             if (val == 1) {
               hint = ["Talc"]
@@ -173,6 +175,7 @@ function answerC_clicked() {
             text += "</ul>";
             document.getElementById("demo").innerHTML = text;
         }
+    });
   }
   function checkAnswer(answer) {
     if (answer == randomQuestion.rightAnswer) {
