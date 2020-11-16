@@ -1,14 +1,14 @@
 var quiz = [];
-quiz[0] = new Question("./img/diamond/talc.png", "Talc", "1", "5", "2");
-quiz[1] = new Question("./img/diamond/gypsum.png", "Gypsum", "2", "6", "3");
-quiz[2] = new Question("./img/diamond/calsite.png", "Calsite", "3", "1", "8");
-quiz[3] = new Question("./img/diamond/fluorite.png", "Fluorite", "4", "10", "6");
-quiz[4] = new Question("./img/diamond/apatite.png", "Apatite", "5", "6", "2");
-quiz[5] = new Question("./img/diamond/orthoclase.png", "Orthoclase", "6", "1", "8");
-quiz[6] = new Question("./img/diamond/quartz.png", "Quartz", "7", "9", "4");
-quiz[7] = new Question("./img/diamond/topaz.png", "Topaz", "8", "5", "3");
-quiz[8] = new Question("./img/diamond/corundum.png", "Corundum", "9", "3", "7");
-quiz[9] = new Question("./img/diamond/diamond.png", "Diamond", "10", "1", "8");
+quiz[0] = new Question("./img/diamond/talc.png", "Talc (ทัลก์)", "1", "5", "2");
+quiz[1] = new Question("./img/diamond/gypsum.png", "Gypsum (ยิปซัม)", "2", "6", "3");
+quiz[2] = new Question("./img/diamond/calsite.png", "Calsite (แคลไซต์)", "3", "1", "8");
+quiz[3] = new Question("./img/diamond/fluorite.png", "Fluorite (ฟลูออไรด์)", "4", "10", "6");
+quiz[4] = new Question("./img/diamond/apatite.png", "Apatite (อะพาไทต์)", "5", "6", "2");
+quiz[5] = new Question("./img/diamond/orthoclase.png", "Orthoclase (ออร์โทเคลส)", "6", "1", "8");
+quiz[6] = new Question("./img/diamond/quartz.png", "Quartz (ควอตซ์)", "7", "9", "4");
+quiz[7] = new Question("./img/diamond/topaz.png", "Topaz (โทแพซ)", "8", "5", "3");
+quiz[8] = new Question("./img/diamond/corundum.png", "Corundum (คอรันดัม)", "9", "3", "7");
+quiz[9] = new Question("./img/diamond/diamond.png", "Diamond (เพชร)", "10", "1", "8");
 
 var randomQuestion;
 var answers = [];
