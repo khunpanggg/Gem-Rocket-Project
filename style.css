@@ -760,6 +760,10 @@ h2.game {
 
 #demo {
   height: 120px;
+  width: 200px;
+  margin:auto;
+  border-radius: 10px;
+  background-color: white;
 }
 ul.demo {
   list-style-type: none;
