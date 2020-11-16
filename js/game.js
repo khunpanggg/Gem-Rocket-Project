@@ -56,7 +56,6 @@ quiz[9] = new Question("./img/diamond/diamond.png", "Diamond (เพชร)", "1
 var randomQuestion;
 var answers = [];
 // var currentScore = 0;
-var currentAnswers;
 var play = true;
 
 
@@ -113,6 +112,7 @@ function answerC_clicked() {
 
 
   function adjustScore(isCorrect) {
+    var currentAnswers;
     $(".bgame").click(function() {
       var idName = $(this).attr("id");
       var val = $(this).val();
