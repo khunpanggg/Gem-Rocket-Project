@@ -723,11 +723,6 @@ button.game {
   margin: 20px;
   color: #574866;
   
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
   text-decoration: none;
   overflow: hidden;
   transition: 0.2s;
@@ -761,11 +756,6 @@ h2.game {
 #next {
   margin-left: 60vw;
   border-radius: 50px;
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
   text-decoration: none;
   overflow: hidden;
   transition: 0.2s;
