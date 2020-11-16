@@ -115,7 +115,6 @@ function answerC_clicked() {
 //     var currentAnswers;
     $(".bgame").click(function() {
       var idName = $(this).attr("id");
-      var val = $(this).val();
       if (isCorrect) {
 //         currentScore++;
         document.getElementById(idName).style.backgroundColor = "green";
