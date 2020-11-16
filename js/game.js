@@ -10,14 +10,54 @@ quiz[7] = new Question("./img/diamond/topaz.png", "Topaz (โทแพซ)", "8"
 quiz[8] = new Question("./img/diamond/corundum.png", "Corundum (คอรันดัม)", "9", "3", "7");
 quiz[9] = new Question("./img/diamond/diamond.png", "Diamond (เพชร)", "10", "1", "8");
 
+// level([
+//   {
+//     "id": 1,
+//     "name": ["Talc"]
+//   },
+//   {
+//     "id": 2,
+//     "name": ["Gypsum", "Calcium", "Selenio", "Cadmium", "Sulfur", "Tellurium", "Bismuth"]
+//   },
+//   {
+//     "id": 3,
+//     "name": ["Calsite", "Copper", "Arsenic", "Antimony", "Thorium"]
+//   },
+//   {
+//     "id": 4,
+//     "name": ["Fluorite", "Iron", "Nickel"]
+//   },
+//   {
+//     "id": 5,
+//     "name": ["Apatite", "Cobalt", "Zirconium", "Palladium"]
+//   },
+//   {
+//     "id": 6,
+//     "name": ["Orthoclase", "Titanium", "Germanium", "Niobium", "Rhodium"]
+//   },
+//   {
+//     "id": 7,
+//     "name": ["Quartz", "Osmium", "Rhenium", "Vanadium"]
+//   },
+//   {
+//     "id": 8,
+//     "name": ["Topaz", "Zirconia"]
+//   },
+//   {
+//     "id": 9,
+//     "name": ["Corundum", "Tungsten Carbide", "Titanium Carbide"]
+//   },
+//   {
+//     "id": 10,
+//     "name": ["Diamond"]
+//   }
+// ]);
+
 var randomQuestion;
 var answers = [];
 var currentScore = 0;
 var play = true;
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  btnProvideQuestion();
-});
 
 function Question(question, namequestion, rightAnswer, wrongAnswer1, wrongAnswer2) {
   this.question = question;
@@ -33,11 +73,16 @@ function shuffle(o) {
 };
 
 function btnProvideQuestion() {
-
+  // Enable #x
+  $( ".bgame" ).prop( "disabled", false );
+  $( "#demo" ).empty();
   var randomNumber = Math.floor(Math.random() * quiz.length);
   randomQuestion = quiz[randomNumber]; //getQuestion
   answers = [randomQuestion.rightAnswer, randomQuestion.wrongAnswer1, randomQuestion.wrongAnswer2];
   shuffle(answers);
+  document.getElementById("answerA").style.backgroundColor = "rgb(226, 220, 203)";
+  document.getElementById("answerB").style.backgroundColor = "rgb(226, 220, 203)";
+  document.getElementById("answerC").style.backgroundColor = "rgb(226, 220, 203)";
 
   document.getElementById("pic").src = randomQuestion.question
   document.getElementById("name").value = randomQuestion.namequestion
@@ -62,27 +107,94 @@ function answerB_clicked() {
 }
 function answerC_clicked() {
   var answerC = document.getElementById("answerC").value;
-
   checkAnswer(answerC);
 }
 
 function adjustScore(isCorrect) {
-  if (isCorrect) {
-    currentScore++;
-  } else {
-    if (currentScore > 0) {
-      currentScore--;
+  $(".bgame").click(function () {
+    var i = $(this).attr("id");
+  
+    if (isCorrect) {
+      currentScore++;
+      // Disable #x
+      $( ".bgame" ).prop( "disabled", true );
+      document.getElementById(i).style.backgroundColor = "green";
+
+    } else {
+      if (currentScore > 0) {
+        // Disable #x
+        $( ".bgame" ).prop( "disabled", true );
+        document.getElementById(i).style.backgroundColor = "red";
+      }
     }
-  }
-  document.getElementById("sco").innerHTML = currentScore;
+    // document.getElementById("sco").innerHTML = currentScore;
+  });
 }
 
 function checkAnswer(answer) {
   if (answer == randomQuestion.rightAnswer) {
     adjustScore(true);
-    btnProvideQuestion();
+
+    // btnProvideQuestion();
   } else {
-    btnProvideQuestion();
-    adjustScore(false);
+    // btnProvideQuestion();
+    // var fruits, text, fLen, i;
+    // fruits = ["aa", "bb", "cc", "dd", "ee", "ff", "gg"]
+    // fLen = fruits.length;
+    // adjustScore(false);
+    // fLen = fruits.length;
+
+    // text = "<ul>";
+    // for (i = 0; i < fLen; i++) {
+    //   text += "<li>" + fruits[i] + "</li>";
+    // }
+    // text += "</ul>";
+    $(".bgame").click(function() {
+      var val = $(this).val();
+      var hint, i;
+      if (val != randomQuestion.rightAnswer) {
+        if (val == 1) {
+          hint = ["Talc"]
+        }
+        if (val == 2) {
+          hint = ["Gypsum", "Calcium", "Selenio", "Cadmium", "Sulfur", "Tellurium", "Bismuth"]
+        }
+        if (val == 3) {
+          hint = ["Calsite", "Copper", "Arsenic", "Antimony", "Thorium"]
+        }
+        if (val == 4) {
+          hint = ["Fluorite", "Iron", "Nickel"]
+        }
+        if (val == 5) {
+          hint = ["Apatite", "Cobalt", "Zirconium", "Palladium"]
+        }
+        if (val == 6) {
+          hint = ["Orthoclase", "Titanium", "Germanium", "Niobium", "Rhodium"]
+        }
+        if (val == 7) {
+          hint = ["Quartz", "Osmium", "Rhenium", "Vanadium"]
+        }
+        if (val == 8) {
+          hint = ["Topaz", "Zirconia"]
+        }
+        if (val == 9) {
+          hint = ["Corundum", "Tungsten Carbide", "Titanium Carbide"]
+        }
+        if (val == 10) {
+          hint = ["Diamond"]
+        }
+        hLen = hint.length;
+        adjustScore(false);
+        hLen = hint.length;
+        text = "<ul>";
+        for (i = 0; i < hLen; i++) {
+          text += "<li>" + hint[i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById("demo").innerHTML = text;
+      }
+    });
   }
 }
+
+$(window).load(btnProvideQuestion());
