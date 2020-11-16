@@ -136,7 +136,7 @@ function answerC_clicked() {
       });
   }
   function listLevel(){
-    $(".bgame").click(function()
+    $(".bgame").click(function(){
       var val = $(this).val();	
       var hint, i;
       if (val != randomQuestion.rightAnswer) {
