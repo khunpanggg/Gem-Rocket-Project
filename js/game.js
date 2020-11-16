@@ -112,7 +112,7 @@ function answerC_clicked() {
 
 
   function adjustScore(isCorrect) {
-//     var currentAnswers;
+     var currentAnswers;
     $(".bgame").click(function() {
       var idName = $(this).attr("id");
       if (isCorrect) {
@@ -120,18 +120,18 @@ function answerC_clicked() {
         document.getElementById(idName).style.backgroundColor = "green";
         // Disable #x
         $( ".bgame" ).prop( "disabled", true );
-//         currentAnswers = "Correct!";
+         currentAnswers = "Correct!";
       } else {
 //         if (currentScore > 0) {
          document.getElementById(idName).style.backgroundColor = "red";
           // Disable #x
           $( ".bgame" ).prop( "disabled", true );
-//           currentAnswers = "UnCorrect!";
+           currentAnswers = "UnCorrect!";
          
           listLevel();
 //         }
       }
-//       document.getElementById("sco").innerHTML = currentAnswers;
+       document.getElementById("sco").innerHTML = currentAnswers;
       // document.getElementById("sco").innerHTML = currentScore;
       });
   }
