@@ -56,7 +56,6 @@ quiz[9] = new Question("./img/diamond/diamond.png", "Diamond (เพชร)", "1
 var randomQuestion;
 var answers = [];
 // var currentScore = 0;
-var currentAnswers = '';
 var play = true;
 
 
@@ -113,25 +112,28 @@ function answerC_clicked() {
 
 
   function adjustScore(isCorrect) {
+    var currentAnswers;
     $(".bgame").click(function() {
       var idName = $(this).attr("id");
       if (isCorrect) {
 //         currentScore++;
+        document.getElementById("sco").innerHTML = "Your Correct!";
         document.getElementById(idName).style.backgroundColor = "green";
         // Disable #x
         $( ".bgame" ).prop( "disabled", true );
-         currentAnswers = "Correct!";
+//          currentAnswers = "Correct!";
       } else {
 //         if (currentScore > 0) {
-         document.getElementById(idName).style.backgroundColor = "red";
-          // Disable #x
-          $( ".bgame" ).prop( "disabled", true );
-           currentAnswers = "UnCorrect!";
+            document.getElementById("sco").innerHTML = "Your UnCorrect!";
+            document.getElementById(idName).style.backgroundColor = "red";
+            // Disable #x
+            $( ".bgame" ).prop( "disabled", true );
+//            currentAnswers = "UnCorrect!";
          
           listLevel();
 //         }
       }
-       document.getElementById("sco").innerHTML = currentAnswers;
+      // document.getElementById("sco").innerHTML = currentAnswers;
       // document.getElementById("sco").innerHTML = currentScore;
       });
   }
