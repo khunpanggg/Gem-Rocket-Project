@@ -116,22 +116,19 @@ function answerC_clicked() {
       var idName = $(this).attr("id");
       if (isCorrect) {
 //         currentScore++;
-        document.getElementById("sco").innerHTML = "Your Correct!";
+        document.getElementById("sco").innerHTML = "Correct!";
         document.getElementById(idName).style.backgroundColor = "green";
         // Disable #x
         $( ".bgame" ).prop( "disabled", true );
-//          currentAnswers = "Correct!";
       } else {
 //         if (currentScore > 0) {
-            document.getElementById("sco").innerHTML = "Your UnCorrect!";
+            document.getElementById("sco").innerHTML = "Uncorrect!";
             document.getElementById(idName).style.backgroundColor = "red";
             // Disable #x
             $( ".bgame" ).prop( "disabled", true );
-//          currentAnswers = "UnCorrect!";
             listLevel();
 //         }
       }
-      // document.getElementById("sco").innerHTML = currentAnswers;
       // document.getElementById("sco").innerHTML = currentScore;
       });
   }
