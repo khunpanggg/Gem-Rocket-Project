@@ -117,13 +117,13 @@ function answerC_clicked() {
       var idName = $(this).attr("id");
       if (isCorrect) {
 //         currentScore++;
-        document.getElementById("sco").innerHTML = "Correct!";
+        document.getElementById("sco").innerHTML = "correct!";
         document.getElementById(idName).style.backgroundColor = "green";
         // Disable #x
         $( ".bgame" ).prop( "disabled", true );
       } else {
 //         if (currentScore > 0) {
-            document.getElementById("sco").innerHTML = "Uncorrect!";
+            document.getElementById("sco").innerHTML = "uncorrect!";
             document.getElementById(idName).style.backgroundColor = "red";
             // Disable #x
             $( ".bgame" ).prop( "disabled", true );
