@@ -74,8 +74,8 @@ function shuffle(o) {
 
 function btnProvideQuestion() {
   // Enable #x
-  $( ".bgame" ).prop( "disabled", false );
-  $( "#demo" ).empty();
+  $(".bgame").prop("disabled", false);
+  $("#demo").empty();
   document.getElementById("sco").innerHTML = "...";
   var randomNumber = Math.floor(Math.random() * quiz.length);
   randomQuestion = quiz[randomNumber]; //getQuestion
@@ -99,95 +99,100 @@ function btnProvideQuestion() {
 
 function answerA_clicked() {
   var answerA = document.getElementById("answerA").value;
-  checkAnswer(answerA,"answerA");
+  checkAnswer(answerA, "answerA");
 }
 
 function answerB_clicked() {
   var answerB = document.getElementById("answerB").value;
-  checkAnswer(answerB,"answerB");
+  checkAnswer(answerB, "answerB");
 }
 function answerC_clicked() {
   var answerC = document.getElementById("answerC").value;
-  checkAnswer(answerC,"answerC");
+  checkAnswer(answerC, "answerC");
 }
 
 
-  function adjustScore(isCorrect,id) {
-    console.log('adjustScore')
-    // var isCor;
-    var idName = id;
-      if (isCorrect) {
-        document.getElementById("sco").innerHTML = "correct!";
-        document.getElementById(idName).style.backgroundColor = "green";
-        // Disable #x
-        $( ".bgame" ).prop( "disabled", true );
-      } else {
-          listLevel(idName);
-          document.getElementById("sco").innerHTML = "uncorrect!";
-          document.getElementById(idName).style.backgroundColor = "red";
-          $( ".bgame" ).prop( "disabled", true );
-        }
+function adjustScore(isCorrect, id) {
+  console.log('adjustScore')
+  // var isCor;
+  var idName = id;
+  if (isCorrect) {
+    console.log('adjustScoreTrue')
+    document.getElementById("sco").innerHTML = "correct!";
+    document.getElementById(idName).style.backgroundColor = "green";
+    // Disable #x
+    $(".bgame").prop("disabled", true);
+  } else {
+    console.log('adjustScoreFalse')
+    listLevel(id);
+    document.getElementById("sco").innerHTML = "uncorrect!";
+    document.getElementById(idName).style.backgroundColor = "red";
+    $(".bgame").prop("disabled", true);
   }
-  function listLevel(idid){
-    // $(".bgame").click(function(){
-    //   var val = $(this).val(); 
-    
-    var hint, i;
-    var val = idid;
-    if (val != randomQuestion.rightAnswer) {
-      if (val == 1) {
-        hint = ["Talc"]
-      }
-      if (val == 2) {
-        hint = ["Gypsum", "Calcium", "Selenio", "Cadmium", "Sulfur", "Tellurium", "Bismuth"]
-      }
-      if (val == 3) {
-        hint = ["Calsite", "Copper", "Arsenic", "Antimony", "Thorium"]
-      }
-      if (val == 4) {
-        hint = ["Fluorite", "Iron", "Nickel"]
-      }
-      if (val == 5) {
-        hint = ["Apatite", "Cobalt", "Zirconium", "Palladium"]
-      }
-      if (val == 6) {
-        hint = ["Orthoclase", "Titanium", "Germanium", "Niobium", "Rhodium"]
-      }
-      if (val == 7) {
-        hint = ["Quartz", "Osmium", "Rhenium", "Vanadium"]
-      }
-      if (val == 8) {
-        hint = ["Topaz", "Zirconia"]
-      }
-      if (val == 9) {
-        hint = ["Corundum", "Tungsten Carbide", "Titanium Carbide"]
-      }
-      if (val == 10) {
-        hint = ["Diamond"]
-      }
-      hLen = hint.length;
-      text = "<ul>";
-      for (i = 0; i < hLen; i++) {
-        text += "<li>" + hint[i] + "</li>";
-      }
-      text += "</ul>";
-      document.getElementById("demo").innerHTML = text;
+}
+function listLevel(idid) {
+  // $(".bgame").click(function(){
+  //   var val = $(this).val(); 
+  console.log('listLevel')
+
+  var i;
+  var val = document.getElementById(idid).textContent;
+  if (val != randomQuestion.rightAnswer) {
+    console.log(val)
+    var hint;
+    if (val == 1) {
+      hint = ["Talc"]
     }
-  };
-  
-  function checkAnswer(answer,id) {
-    console.log("checkAnswer")
-    console.log(answer)
-    if (answer == randomQuestion.rightAnswer) {
-      console.log('if checkAnswer')
-      adjustScore(true,id);
-      // btnProvideQuestion();
-    } else {
-      console.log('else checkAnswer')
-      adjustScore(false,id);
-      // btnProvideQuestion();
+    if (val == 2) {
+      hint = ["Gypsum", "Calcium", "Selenio", "Cadmium", "Sulfur", "Tellurium", "Bismuth"]
     }
+    if (val == 3) {
+      hint = ["Calsite", "Copper", "Arsenic", "Antimony", "Thorium"]
+    }
+    if (val == 4) {
+      hint = ["Fluorite", "Iron", "Nickel"]
+    }
+    if (val == 5) {
+      hint = ["Apatite", "Cobalt", "Zirconium", "Palladium"]
+    }
+    if (val == 6) {
+      hint = ["Orthoclase", "Titanium", "Germanium", "Niobium", "Rhodium"]
+    }
+    if (val == 7) {
+      hint = ["Quartz", "Osmium", "Rhenium", "Vanadium"]
+    }
+    if (val == 8) {
+      hint = ["Topaz", "Zirconia"]
+    }
+    if (val == 9) {
+      hint = ["Corundum", "Tungsten Carbide", "Titanium Carbide"]
+    }
+    if (val == 10) {
+      hint = ["Diamond"]
+    }
+    // hLen = hint.length;
+    text = "<ul>";
+    for (i = 0; i < hint.length; i++) {
+      text += "<li>" + hint[i] + "</li>";
+    }
+    text += "</ul>";
+    document.getElementById("demo").innerHTML = text;
   }
+};
+
+function checkAnswer(answer, id) {
+  console.log("checkAnswer")
+  console.log(answer)
+  if (answer == randomQuestion.rightAnswer) {
+    console.log('if checkAnswer')
+    adjustScore(true, id);
+    // btnProvideQuestion();
+  } else {
+    console.log('else checkAnswer')
+    adjustScore(false, id);
+    // btnProvideQuestion();
+  }
+}
 
 
 $(window).load(btnProvideQuestion());
